@@ -2,11 +2,79 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Мишка.Главная</title>
   </head>
   <body>
+    <header class="main-header main-header--index">
+      <a href="index.html" title="На главную">
+        <h1 class="shop-logo shop-logo--header">Магазин "Мишка"</h1>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+        <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+        <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
+        <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
+      </nav>
+      <h2 class="page-title">Милые штуки ручной работы для дома</h2>
+      <a class="interior" href="#">Предметы интерьера</a> <!--TODO-->
+      <a class="toys" href="#">Детские игрушки</a>  <!--TODO-->
+    </header>
+    <main>
+      <article class="product-week">
+        <h3 class="product-week__title">Вязаные корзинки</h3>
+        <span class="product-week__mark">Товар недели</span>
+        <p class="product-week__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+        <!--TODO-->
+        <img class="product-img product-img--week" src="#" alt="Вязаные корзинки" width=" " height=" ">
+        <p class="product-week__price">Цена: 990 руб.</p>
+        <a class="btn btn--week-product" href="#">Заказать</a>
+      </article>
+      <section class="features">
+        <h3 class="features__title">Коротко о нас:</h3>
+        <ul class="features__items">
+          <li class="features__item">Экологически-чистые материалы</li>
+          <li class="features__item">Скандинавский стиль по российской цене</li>
+          <li class="features__item">Увеличивает лайки на фотографиях</li>
+          <li class="features__item">Связано вручную с любовью и умилением</li>
+          <li class="features__item">Поддержка отечественного производителя</li>
+          <li class="features__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="reviews">  <!--TODO-->
+        <h3 class="reviews_title">Отзывы</h3>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      </section>
 
+<!--TODO-->
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__social">
+        <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+        <a class="social-btn social-btn--inst" href="#"><span class="visually-hidden">Инстаграм,</span></a>
+        <a class="social-btn social-btn--fb" href="#"><span class="visually-hidden">Фейсбук,</span></a>
+        <a class="social-btn social-btn--twit" href="#"><span class="visually-hidden">Твиттер</span></a>
+      </div>
+      <div class="footer-copyright">
+        <a class="link footer-copyright__link" href="#">Разработано</a>
+        <a class="footer-copyright__logo" href="https://htmlacademy.ru">Html Academy</a>
+      </div>
+    </footer>
+    <!--end main-footer-->
+    <div class="modal-add">
+      <form class="add-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="add-form__item">
+          <legend class="add-form__title">Добавить в корзину</legend>
+          <input class="add-form__input" type="checkbox" id="size-s" value="S" name="size-s" />
+          <label for="size-s">S</label>
+          <input class="add-form__input" type="checkbox" id="size-m" value="M" name="size-m" />
+          <label for="size-m">M</label>
+          <input class="add-form__input" type="checkbox" id="size-l" value="L" name="size-l" />
+          <label for="size-l">L</label>
+          <p class="add-form__text">Выберите размер:</p>
+          <button class="btn btn--add" type="submit">Добавить</button>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
