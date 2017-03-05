@@ -2,53 +2,53 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Мишка.Каталог</title>
+    <title>Магазин «Мишка».Каталог</title>
   </head>
   <body>
     <header class="main-header">
       <a href="index.html" title="На главную">
-        <h1 class="shop-logo">Магазин "Мишка"</h1>
+        <img class="logo  logo--main-header" src="#" alt="Магазин «Мишка»" width=" " height=" ">
       </a>
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <a class="link main-nav__link main-nav__link--active">Каталог товаров</a>
-        <a class="link main-nav__link" href="form.html">Вязание на заказ</a>
-        <a class="link main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
-        <a class="link main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
+      <nav class="main-header__nav">
+        <button class="main-header__btn" type="button">Открыть меню</button>
+        <a class="main-header__link main-header__link--active">Каталог товаров</a>
+        <a class="main-header__link" href="form.html">Вязание на заказ</a>
+        <a class="main-header__link main-header__link--search" href="#">Поиск по сайту</a>
+        <a class="main-header__link main-header__link--cart" href="#">Корзина: пока пуста</a>
       </nav>
-      <h2 class="page-title">Каталог товаров</h2>
+      <h1 class="page-title">Каталог товаров</h1>
     </header>
     <!--end main-header-->
     <main>
       <section class="catalog-products">
         <article class="product">
-          <a class="product__img" href="#">
+          <a class="product__img-link" href="#">
             <img class="product-img" src="#" alt="Зайчик-попрыгайчик" width=" " height=" ">
           </a>
-          <a class="link product__link" href="#">
-            <h3 class="product__title">Зайчик-попрыгайчик</h3>
+          <a class="link  product__link" href="#">
+            <h2 class="product__title">Зайчик-попрыгайчик</h2>
           </a>
           <p class="product__desc">Рост 30см, вес 200 г</p>
           <p class="product__price">1200 руб.</p>
           <a class="cart-btn" href="#">Добавить в корзину</a>
         </article>
         <article class="product">
-          <a class="product__img" href="#">
-            <img class="product-img" src="#" alt="Корзинка для белья" width=" " height=" ">
+          <a class="product__img-link" href="#">
+            <img class="product__img" src="#" alt="Корзинка для белья" width=" " height=" ">
           </a>
-          <a class="link product__link" href="#">
-            <h3 class="product__title">Корзинка для белья</h3>
+          <a class="link  product__link" href="#">
+            <h2 class="product__title">Корзинка для белья</h2>
           </a>
           <p class="product__desc">Диаметр 15 см, высота 10 см</p>
           <p class="product__price">690 руб.</p>
           <a class="cart-btn" href="#">Добавить в корзину</a>
         </article>
         <article class="product">
-          <a class="product__img" href="#">
+          <a class="product__img-link" href="#">
             <img class="product-img" src="#" alt="Большая корзинка для игрушек" width=" " height=" ">
           </a>
-          <a class="link product__link" href="#">
-            <h3 class="product__title">Большая корзинка для игрушек</h3>
+          <a class="link  product__link" href="#">
+            <h2 class="product__title">Большая корзинка для игрушек</h2>
           </a>
           <p class="product__desc">Диаметр 30 см, высота 30 см</p>
           <p class="product__price">1500 руб.</p>
@@ -57,14 +57,14 @@
       </section>
       <!--end catalog-products-->
       <section class="production-process">
-        <h3 class="production-process__title">Процесс производства</h3>
+        <h2 class="production-process__title">Процесс производства</h2>
         <div class="production-process__video">
           <video width=" " height=" " controls="controls" poster=" " preload=" ">
             <source src="#" type="#">
           </video>
         </div>
-        <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-        <a class="btn btn--order" href="#">Сделать заказ</a>
+        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+        <a class="btn btn--order  production-process__btn" href="#">Сделать заказ</a>
       </section>
       <!--end production-process-->
     </main>
@@ -86,12 +86,12 @@
         <fieldset class="add-form__item">
           <legend class="add-form__title">Добавить в корзину</legend>
           <input class="add-form__input" type="checkbox" id="size-s" value="S" name="size-s" />
-          <label for="size-s">S</label>
+          <label class="add-form__label" for="size-s">S</label>
           <input class="add-form__input" type="checkbox" id="size-m" value="M" name="size-m" />
-          <label for="size-m">M</label>
+          <label class="add-form__label" for="size-m">M</label>
           <input class="add-form__input" type="checkbox" id="size-l" value="L" name="size-l" />
-          <label for="size-l">L</label>
-          <p class="add-form__text">Выберите размер:</p>
+          <label class="add-form__label" for="size-l">L</label>
+          <p>Выберите размер:</p>
           <button class="btn btn--add" type="submit">Добавить</button>
         </fieldset>
       </form>
