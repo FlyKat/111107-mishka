@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин «Мишка».Форма заказа</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="index.html" title="На главную">
+        <img class="logo main-header__logo" src="#" alt="Магазин «Мишка»" width=" " height=" ">
+      </a>
+      <nav class="main-header__nav">
+        <button class="main-header__btn" type="button">Открыть меню</button>
+        <a class="main-header__link" href="catalog.html">Каталог товаров</a>
+        <a class="main-header__link main-header__link--active">Вязание на заказ</a>
+        <a class="main-header__link main-header__link--search" href="#">Поиск по сайту</a>
+        <a class="main-header__link main-header__link--cart" href="#">Корзина: пока пуста</a>
+      </nav>
+      <h1 class="page-title">Вязание на заказ</h1>
+    </header>
+    <main>
+      <p class="">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="order-form-item">
+          <legend class="order-form-item__title">Тип</legend>
+          <input class="order-form-item__input-type" type="radio" name="type" value="interior" id="interior" checked>
+          <label class="order-form-item__label" for="interior">Аксессуар для интерьера</label>
+          <input class="order-form-item__input-type" type="radio" name="type" value="toy" id="toy">
+          <label class="order-form-item__label" for="toy">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="order-form-item">
+          <legend class="order-form-item__title">Цвет</legend>
+          <input class="order-form-item__input-color" type="checkbox" name="white" id="white" checked>
+          <label class="order-form-item__label" for="white">Белый</label>
+          <input class="order-form-item__input-color" type="checkbox" name="grey" id="grey" checked>
+          <label  class="order-form-item__label" for="grey">Серый</label>
+          <input class="order-form-item__input-color" type="checkbox" name="tiffany" id="tiffany">
+          <label  class="order-form-item__label" for="tiffany">«Тиффани»</label>
+          <input class="order-form-item__input-color" type="checkbox" name="black" id="black">
+          <label class="order-form-item__label" for="black">Черный</label>
+          <input class="order-form-item__input-color" type="checkbox" name="pink" id="pink">
+          <label class="order-form-item__label" for="pink">Розовый</label>
+          <input class="order-form-item__input-color" type="checkbox" name="orange" id="orange">
+          <label class="order-form-item__label" for="orange">Оранжевый</label>
+        </fieldset>
+        <fieldset class="order-form-item">
+          <legend class="order-form-item__title">ФИО</legend>
+          <label class="order-form-item__label-identity" for="name">Имя:</label>
+          <input class="order-form-item__field-identity" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+          <label class="order-form-item__label-identity" for="surname">Фамилия:</label>
+          <input class="order-form-item__field-identity" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+          <label class="order-form-item__label-identity" for="patronymic">Отчество:</label>
+          <input class="order-form-item__field-identity" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете*">
+        </fieldset>
+        <fieldset class="user-contacts">
+          <label class="user-contacts__label" for="tel">Тел</label>
+          <input class="user-contacts__field" type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*" required>
+          <label class="user-contacts__label" for="email">E-mail</label>
+          <input class="user-contacts__field" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+          <label class="user-contacts__label" for="message">Доп</label>
+          <textarea class="user-contacts__field user-contacts__field--textarea" name="message" id="message">Опишите все ваши пожелания к заказу</textarea>
+        </fieldset>
+        <p class="order-form__text">*Поля обязательные для заполнения</p>
+        <button class="btn order-form__btn" type="submit">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__social">
+        <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+        <a class="social-btn social-btn--inst" href="#"><span class="visually-hidden">Инстаграм,</span></a>
+        <a class="social-btn social-btn--fb" href="#"><span class="visually-hidden">Фейсбук,</span></a>
+        <a class="social-btn social-btn--twit" href="#"><span class="visually-hidden">Твиттер</span></a>
+      </div>
+      <div class="footer-copyright">
+        <a class="link footer-copyright__link" href="#">Разработано</a>
+        <a class="footer-copyright__logo" href="https://htmlacademy.ru">Html Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
