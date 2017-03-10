@@ -1,0 +1,31 @@
+.main-footer {
+  background: $color-third;
+}
+
+.main-footer__wrapper {
+  @include container();
+}
+
+.main-footer span {
+  @include visually-hidden;
+}
+
+.main-footer__social {
+  text-align: center;
+}
+
+.main-footer__link {
+  font-family: $font-family;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  color: $color-second;
+}
+
+.main-footer__copyright-logo {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background: url('../../img/htmlacademy.svg') no-repeat;
+}

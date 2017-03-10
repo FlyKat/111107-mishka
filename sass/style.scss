@@ -1,0 +1,21 @@
+@import 'base/normalize';
+@import 'global/fonts';
+@import 'variables';
+@import 'mixins';
+@import 'base/base';
+//common style
+@import 'blocks/btn';
+@import 'blocks/main-header';
+@import 'blocks/main-footer';
+@import 'blocks/social-btn';
+@import 'blocks/add-form';
+//index-style
+@import 'blocks/product-week';
+@import 'blocks/features';
+@import 'blocks/feedback';
+@import 'blocks/shop-contacts';
+//catalog style
+@import 'blocks/product';
+@import 'blocks/production-process';
+//start form-style
+@import 'blocks/form';

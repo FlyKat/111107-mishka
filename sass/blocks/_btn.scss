@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  width: 260px;
+  padding: 0;
+  font-family: $font-family;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: $color-fourth;
+  border: 2px solid $color-fourth;
+  background: $color-main;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:hover {
+    color: $color-main;
+    background: $color-fourth;
+  }
+
+  &:active {
+    color: rgba($color-main, 0.3);
+  }
+
+  &--order {
+    width: 192px;
+  }
+
+  &--add {
+    line-height: 52px;
+    color: $color-main;
+    background: $color-seven;
+    border: none;
+  }
+}

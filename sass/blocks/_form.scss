@@ -1,0 +1,58 @@
+.form {
+  @include container();
+  font-family: $font-family;
+}
+
+.form__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $color-seven;
+}
+
+.form__label-radio {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $color-second;
+}
+
+.form__label-checkbox {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $color-second;
+}
+
+.form__label-text {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $color-second;
+
+  &--tel {
+    @include visually-hidden;
+  }
+
+  &--email {
+    @include visually-hidden;
+  }
+
+  &--textarea {
+    @include visually-hidden;
+  }
+
+}
+
+.form__field-text {
+  font-family: $font-family;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba($color-fourth, 0.3);
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 16px;
+}
