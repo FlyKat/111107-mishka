@@ -1,8 +1,8 @@
-@import 'base/normalize';
+@import 'global/normalize';
+@import 'global/scaffolding';
 @import 'global/fonts';
 @import 'variables';
 @import 'mixins';
-@import 'base/base';
 //common style
 @import 'blocks/btn';
 @import 'blocks/main-header';
@@ -10,12 +10,12 @@
 @import 'blocks/social-btn';
 @import 'blocks/add-form';
 //index-style
-@import 'blocks/product-week';
+@import 'blocks/popular-product';
 @import 'blocks/features';
 @import 'blocks/feedback';
 @import 'blocks/shop-contacts';
 //catalog style
 @import 'blocks/product';
-@import 'blocks/production-process';
+@import 'blocks/video-block';
 //start form-style
 @import 'blocks/form';

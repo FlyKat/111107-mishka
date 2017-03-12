@@ -1,9 +1,9 @@
-.product {
+.products {
   @include container();
   font-family: $font-family;
 }
 
-.product__item span {
+.product span {
   @include visually-hidden;
 }
 
@@ -11,7 +11,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  color: $color-second;
+  color: $text-color;
 }
 
 .product__desc {
@@ -24,5 +24,5 @@
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
-  color: $color-second;
+  color: $text-color;
 }

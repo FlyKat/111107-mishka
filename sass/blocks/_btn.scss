@@ -7,8 +7,8 @@
   font-weight: 700;
   line-height: 48px;
   text-align: center;
-  color: $color-fourth;
-  border: 2px solid $color-fourth;
+  color: $text-color;
+  border: 2px solid $text-color--muted;
   background: $color-main;
   text-transform: uppercase;
   text-decoration: none;
@@ -16,7 +16,7 @@
 
   &:hover {
     color: $color-main;
-    background: $color-fourth;
+    background: $text-color--muted;
   }
 
   &:active {
@@ -30,7 +30,7 @@
   &--add {
     line-height: 52px;
     color: $color-main;
-    background: $color-seven;
+    background: $brand-color--light;
     border: none;
   }
 }
