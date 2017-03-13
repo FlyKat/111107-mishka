@@ -1,0 +1,20 @@
+.features {
+  font-family: $font-family;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $text-color;
+}
+
+.features__wrapper {
+  @include container();
+}
+
+.features__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.features__list {
+  list-style: none;
+}

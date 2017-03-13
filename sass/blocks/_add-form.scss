@@ -1,0 +1,24 @@
+.add-form {
+  @include container();
+  font-family: $font-family;
+}
+
+.add-form__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $text-color;
+}
+
+.add-form__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: $text-color--muted;
+}
+
+.add-form__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $text-color;
+}

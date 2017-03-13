@@ -1,0 +1,19 @@
+.social-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.social-btn--inst {
+  background: transparent url('../../img/icon-insta.svg') no-repeat;
+}
+
+.social-btn--fb {
+  background: transparent url('../../img/icon-fb.svg') no-repeat;
+}
+
+.social-btn--twit {
+  background: transparent url('../../img/icon-twitter.svg') no-repeat;
+}

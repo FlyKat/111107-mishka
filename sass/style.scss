@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'mixins';
+@import 'global/normalize';
+@import 'global/scaffolding';
+@import 'global/fonts';
+//common style
+@import 'blocks/btn';
+@import 'blocks/main-header';
+@import 'blocks/main-footer';
+@import 'blocks/social-btn';
+@import 'blocks/add-form';
+//index-style
+@import 'blocks/popular-product';
+@import 'blocks/features';
+@import 'blocks/feedback';
+@import 'blocks/shop-contacts';
+//catalog style
+@import 'blocks/product';
+@import 'blocks/video-block';
+//start form-style
+@import 'blocks/form';

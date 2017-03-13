@@ -1,0 +1,25 @@
+.main-header {
+
+}
+
+.main-header__nav {
+
+}
+
+.main-header__intro {
+  height: 177px;
+  background: $color-background;
+
+  &--index {
+    height: 284px;
+    background: #fafafa url('../../img/hero-mobile@1x.jpg') no-repeat center;
+  }
+
+}
+
+.main-header__title {
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
