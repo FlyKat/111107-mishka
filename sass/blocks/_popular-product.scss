@@ -1,0 +1,35 @@
+.popular-product {
+  font-family: $font-family;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text-color--muted;
+}
+
+.popular-product__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $text-color;
+}
+
+.popular-prodact__mark {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $brand-color--light;
+}
+
+.popular-product__desc {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.popular-product__spec {
+  line-height: 20px;
+}
+
+.product-week__price {
+  font-size: 17px;
+  font-weight: 700;
+}

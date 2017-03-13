@@ -1,0 +1,23 @@
+.shop-contacts {
+  font-family: $font-family;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-color--muted;
+}
+
+.shop-contacts__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $text-color;
+}
+
+.shop-contacts__list {
+  list-style: none;
+}
+
+.shop-contacts__map {
+  width: 320px;
+  height: 457px;
+  background: url('../../img/map-mobile@1x.jpg') no-repeat center;
+}
