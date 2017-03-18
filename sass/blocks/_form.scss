@@ -1,58 +1,164 @@
-.form {
+.form__inner {
   @include container();
-  font-family: $font-family;
 }
 
 .form__title {
+  margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
+  text-transform: uppercase;
   color: $brand-color--light;
 }
 
-.form__label-radio {
+.form__radio {
+  margin-bottom: 22px;
+  padding: 10px 0;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-input + .form__radio-label {
+ position: relative;
+ display: block;
+ padding-left: 62px;
+ font-size: 17px;
+ font-weight: 700;
+ line-height: 18px;
+ color: $border-color--darken;
+ cursor: pointer;
+
+ &::before {
+   content: "";
+   position: absolute;
+   top: -10px;
+   left: 0;
+   display: block;
+   width: 36px;
+   height: 36px;
+   border: 2px solid $border-color--dark;
+   border-radius: 50%;
+ }
+}
+
+.form__radio-input:checked + .form__radio-label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: $brand-color;
+  border-radius: 50%;
+}
+
+.form__radio-input + .form__radio-label:hover::before {
+  border-color: $brand-color;
+}
+
+.form__radio-input:disabled + .form__radio-label {
+  border-color: rgba($border-color--dark, 0.3);
+}
+
+.form__checkbox {
+  margin-bottom: 22px;
+  padding: 11px 0;
+}
+
+.form__checkbox-input {
+  display: none;
+}
+
+.form__checkbox-input + .form__checkbox-label {
+ position: relative;
+ display: block;
+ padding-left: 62px;
+ font-size: 17px;
+ font-weight: 700;
+ line-height: 18px;
+ color: $border-color--darken;
+ cursor: pointer;
+
+ &::before {
+   content: "";
+   position: absolute;
+   top: -12px;
+   left: 0;
+   display: block;
+   width: 36px;
+   height: 35px;
+   border: 2px solid $border-color--dark;
+ }
+}
+
+.form__checkbox-input:checked + .form__checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 7px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon-tick.svg") no-repeat;
+}
+
+.form__checkbox-input + .form__checkbox-label:hover::before {
+  border-color: $brand-color;
+}
+
+.form__checkbox-input:disabled + .form__checkbox-label::before {
+  border-color: rgba($border-color--dark, 0.3);
+}
+
+.form__field {
+  display: flex;
+}
+
+.form__field-label {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
   color: $text-color;
+
+  &--connect {
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $brand-color--light;
+  }
 }
 
-.form__label-checkbox {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  color: $text-color;
+.form__field {
+  margin-bottom: 10px;
 }
 
-.form__label-text {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  color: $text-color;
-
-  &--tel {
-    @include visually-hidden;
-  }
-
-  &--email {
-    @include visually-hidden;
-  }
-
-  &--textarea {
-    @include visually-hidden;
-  }
-
-}
-
-.form__field-text {
-  font-family: $font-family;
+.form__field-input {
+  padding: 15px 0;
+  width: 260px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
   color: rgba($text-color--muted, 0.3);
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid $border-color--darken;
+
+  &--textarea {
+    padding: 15px;
+    min-height: 142px;
+    border: 2px solid $border-color--darken;
+  }
+
 }
 
 .form__text {
   font-size: 14px;
   line-height: 16px;
+}
+
+.form__btn {
+  margin-bottom: 55px;
 }

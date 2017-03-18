@@ -4,18 +4,24 @@
 @import 'global/scaffolding';
 @import 'global/fonts';
 //common style
+@import 'blocks/page-main';
 @import 'blocks/btn';
-@import 'blocks/main-header';
-@import 'blocks/main-footer';
-@import 'blocks/social-btn';
-@import 'blocks/add-form';
+@import 'blocks/page-header';
+@import 'blocks/page-footer';
+@import 'blocks/logo';
+@import 'blocks/copyright';
+@import 'blocks/social';
 //index-style
 @import 'blocks/popular-product';
 @import 'blocks/features';
 @import 'blocks/feedback';
 @import 'blocks/shop-contacts';
 //catalog style
+@import 'blocks/products';
 @import 'blocks/product';
 @import 'blocks/video-block';
 //start form-style
 @import 'blocks/form';
+//start modal style
+@import 'blocks/modal';
+@import 'blocks/form-select';

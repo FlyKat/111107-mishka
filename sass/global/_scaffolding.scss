@@ -1,10 +1,14 @@
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
-  font-family: $font-family;
+  font-family: ('Open Sans', 'Arial', sans-serif);
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   color: $text-color--muted;
-  background: $color-main;
+  background: $main-color;
+}
+
+.link {
+  text-decoration: none;
 }

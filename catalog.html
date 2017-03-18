@@ -2,110 +2,128 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Магазин «Мишка». Каталог товаров</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <a href="index.html" title="На главную">
-        <img class="logo  logo--main-header" src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
-      </a>
-      <nav class="main-header__nav">
-        <button class="main-header__btn main-header__btn--closed" type="button">Открыть меню</button>
-        <a class="main-header__link main-header__link--active">Каталог товаров</a>
-        <a class="main-header__link" href="form.html">Вязание на заказ</a>
-        <div class="main-header__search search-form" href="#">
-          <form class="form form--search" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="field-text field-text--search" name="search" id="search" placeholder="Поиск по сайту">
-            <label for="field-text__label field--text__label--search">Поиск по сайту</label>
-            <button class="search-form__btn" type="submit">Поиск по сайту</button>
-          </form>
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <div class="page-header__inner">
+          <button class="page-header__btn page-header btn--closed" type="button">Открыть меню</button>
+          <a class="logo  page-header__link" href="index.html" title="На главную">
+            <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
+          </a>
+          <a class="page-header__link" href="catalog.html">Каталог товаров</a>
+          <a class="page-header__link" href="form.html">Вязание на заказ</a>
+          <a class="page-header__link page-header__link--search" href="#">Поиск по сайту</a>
+          <a class="page-header__link page-header__link--cart" href="#">Корзина: пока пуста</a>
+          <a class="page-header__link page-header__link--desktop" href="#">Новые поступления</a>
+          <a class="page-header__link page-header__link--desktop" href="#">Распродажа</a>
+          <span class="page-header__link page-header__link--info">Бесплатная доставка по России</span>
         </div>
-        <a class="main-header__link main-header__link--cart" href="#">Корзина: пока пуста</a>
       </nav>
-      <section class="main-header__intro">
-        <h1 class="main-header__title">Каталог товаров</h1>
-      </section>
+      <h1 class="page-header__title">Каталог товаров</h1>
     </header>
     <!--end main-header-->
-    <main class="main">
-      <section class="products">
-        <article class="product">
+    <main class="page-main">
+      <section class="products  page-main__products">
+        <article class="product  products__item">
           <a class="product__img-link" href="#">
             <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
           </a>
-          <a class="link  product__link" href="#">
-            <h2 class="product__title">Зайчик-попрыгайчик</h2>
-          </a>
-          <p class="product__desc">Рост 30см, вес 200 г</p>
-          <p class="product__price">1200 руб.</p>
-          <a class="cart-btn" href="#"><span>Добавить в корзину</span></a>
+          <div class="product__desc">
+            <a class="link  product__link" href="#">
+              <h2 class="product__title">Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="product__spec">Рост 30см, вес 200 г</p>
+            <div class="product__buy">
+              <p class="product__price">1 200 руб.</p>
+              <a class="product__cart" href="#">Добавить в корзину</a>
+            </div>
+          </div>
         </article>
-        <article class="product">
+        <article class="product  products__item">
           <a class="product__img-link" href="#">
             <img src="img/photo-2-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
           </a>
-          <a class="link  product__link" href="#">
-            <h2 class="product__title">Корзинка для белья</h2>
-          </a>
-          <p class="product__desc">Диаметр 15 см, высота 10 см</p>
-          <p class="product__price">690 руб.</p>
-          <a class="cart-btn" href="#">Добавить в корзину</a>
+          <div class="product__desc">
+            <a class="link  product__link" href="#">
+              <h2 class="product__title">Корзинка для белья</h2>
+            </a>
+            <p class="product__spec">Диаметр 15 см, высота 10 см</p>
+            <div class="product__buy">
+              <p class="product__price">690 руб.</p>
+              <a class="product__cart" href="#">Добавить в корзину</a>
+            </div>
+          </div>
         </article>
-        <article class="product">
+        <article class="product  products__item">
           <a class="product__img-link" href="#">
             <img src="img/photo-3-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
           </a>
-          <a class="link  product__link" href="#">
-            <h2 class="product__title">Большая корзинка для игрушек</h2>
-          </a>
-          <p class="product__desc">Диаметр 30 см, высота 30 см</p>
-          <p class="product__price">1500 руб.</p>
-          <a class="cart-btn" href="#">Добавить в корзину</a>
+          <div class="product__desc">
+            <a class="link  product__link" href="#">
+              <h2 class="product__title">Большая корзинка для&nbsp;игрушек</h2>
+            </a>
+            <p class="product__spec">Диаметр 30 см, высота 30 см</p>
+            <div class="product__buy">
+              <p class="product__price">1 500 руб.</p>
+              <a class="product__cart" href="#">Добавить в корзину</a>
+            </div>
+          </div>
         </article>
       </section>
       <!--end product-->
-      <section class="video-block">
-        <h2 class="vodeo-block__title">Процесс производства</h2>
-        <div class="video-block__video">
-          <video width=" " height=" " controls="controls" poster=" " preload=" ">
-            <source src="#" type="#">
-          </video>
-        </div>
-        <p class="video-block__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-        <a class="btn btn--order  video-block__btn" href="#">Сделать заказ</a>
-      </section>
-      <!--end production-process-->
+      <div class="page-main__video-block">
+        <section class="video-block">
+          <h2 class="video-block__title">Процесс производства</h2>
+          <div class="video-block__video">
+            <video width="260" height="150" poster="img/video-mobile@1x.jpg" preload="none">
+              <source src="#" type="#">
+            </video>
+          </div>
+          <p class="video-block__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+          <a class="btn btn--order  video-block__btn" href="#">Сделать заказ</a>
+        </section>
+        <!--end video-block-->
+      </div>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__social">
-          <span>Подписывайтесь на нас в соцсетях:</span>
-          <a class="social-btn social-btn--inst" href="#"><span>Инстаграм,</span></a>
-          <a class="social-btn social-btn--fb" href="#"><span>Фейсбук,</span></a>
-          <a class="social-btn social-btn--twit" href="#"><span>Твиттер</span></a>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <a class="logo logo--page-footer" href="index.html" title="На главную">
+          <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
+        </a>
+        <div class="social  page-footer__social">
+          <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
+          <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
+          <a class="social__btn social__btn--twit" href="#">Твиттер</a>
         </div>
-        <div class="copyright  main-footer__copyright">
+        <div class="copyright  page-footer__copyright">
           <a class="copyright__link" href="#">Разработано</a>
-          <a class="copyright__logo" href="https://htmlacademy.ru"><span>Html Academy</span></a>
+          <a class="copyright__logo" href="https://htmlacademy.ru">Html Academy</a>
         </div>
       </div>
     </footer>
     <!--end main-footer-->
     <div class="modal">
-      <form class="add-form  modal__form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="add-form__item">
-          <legend class="add-form__title">Добавить в корзину</legend>
-          <p class="add-form__text">Выберите размер:</p>
-          <input class="add-form__checkbox" type="checkbox" id="size-s" value="S" name="size-s" />
-          <label class="add-form__label" for="size-s">S</label>
-          <input class="add-form__checkbox" type="checkbox" id="size-m" value="M" name="size-m" />
-          <label class="add-form__label" for="size-m">M</label>
-          <input class="add-form__checkbox" type="checkbox" id="size-l" value="L" name="size-l" />
-          <label class="add-form__label" for="size-l">L</label>
+      <div class="modal__inner">
+        <form class="form-select  modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="form-select__title">Добавить в&nbspкорзину</h2>
+          <p class="form-select__text">Выберите размер:</p>
+          <div class="form-select__group">
+            <input class="form-select__checkbox" type="checkbox" id="size-s" value="S" name="size-s" checked>
+            <label class="form-select__label" for="size-s">S</label>
+            <input class="form-select__checkbox" type="checkbox" id="size-m" value="M" name="size-m">
+            <label class="form-select__label" for="size-m">M</label>
+            <input class="form-select__checkbox" type="checkbox" id="size-l" value="L" name="size-l">
+            <label class="form-select__label" for="size-l">L</label>
+          </div>
           <button class="btn btn--add" type="submit">Добавить</button>
-        </fieldset>
-      </form>
+        </form>
+      </div>
     </div>
+    <!--end modal-add-->
+    <!--end modal-add-->
   </body>
 </html>

@@ -1,13 +1,29 @@
 @mixin container() {
+  outline: 1px dashed green;
+  margin: 0 auto;
+  padding: 0 30px;
   width: 260px;
-  margin: 0 30px;
+
+  @media #{$tablet} {
+    outline: 1px dashed blue;
+    padding: 0 50px;
+    width: 668px;
+  }
+
+  @media #{$desktop} {
+    outline: 1px dashed orange;
+    padding: 0 50px;
+    width: 1050px;
+  }
 }
 
-@mixin visually-hidden {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  width: 1px;
-  height: 1px;
-  border: 0;
+@mixin modal-container() {
+  padding: 0 106px;
+  width: 354px;
+}
+
+@mixin img-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
   overflow: hidden;
 }

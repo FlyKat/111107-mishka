@@ -1,0 +1,23 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__link {
+  margin-right: 30px;
+  width: 127px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  color: $text-color;
+}
+
+.copyright__logo {
+  @include img-replacement;
+  display: block;
+  width: 27px;
+  height: 34px;
+  background: url('../img/logo-htmlacademy.svg') no-repeat center;
+}
