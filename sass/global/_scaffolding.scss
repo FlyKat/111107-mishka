@@ -3,10 +3,21 @@ body {
   margin: 0 auto;
   font-family: ('Open Sans', 'Arial', sans-serif);
   font-size: 15px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 400;
   color: $text-color--muted;
   background: $main-color;
+
+  @media #{$tablet} {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media #{$desktop} {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
 }
 
 .link {

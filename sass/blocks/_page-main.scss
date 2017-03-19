@@ -29,6 +29,17 @@
 .page-main__text {
   margin-top: 26px;
   margin-bottom: 26px;
+  font-size: 13px;
+
+  @media #{$tablet} {
+    font-size: 17px;
+  }
+
+  @media #{$desktop} {
+    margin-left: 175px;
+    font-size: 17px;
+  }
+
 }
 
 .page-main__form {
