@@ -30,73 +30,79 @@
       <div class="page-main__inner">
         <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
-      <form class="form  gage-main__form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="form  page-main__form" action="https://echo.htmlacademy.ru/" method="post">
         <section class="form__item">
           <div class="form__inner">
             <h2 class="form__title">Тип</h2>
-            <div class="form__radio">
-              <input class="form__radio-input" type="radio" name="type" value="interior" id="interior" checked>
-              <label class="form__radio-label" for="interior">Аксессуар для интерьера</label>
-            </div>
-            <div class="form__radio">
-              <input class="form__radio-input" type="radio" name="type" value="toy" id="toy">
-              <label class="form__radio-label" for="toy">Детская игрушка</label>
+            <div class="form__group">
+              <div class="form__radio">
+                <input class="form__radio-input" type="radio" name="type" value="interior" id="interior" checked>
+                <label class="form__radio-label" for="interior">Аксессуар для интерьера</label>
+              </div>
+              <div class="form__radio">
+                <input class="form__radio-input" type="radio" name="type" value="toy" id="toy">
+                <label class="form__radio-label" for="toy">Детская игрушка</label>
+              </div>
             </div>
           </div>
         </section>
         <section class="form__item">
           <div class="form__inner">
             <h2 class="form__title">Цвет</h2>
-            <div class="form__checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="white" id="white" checked>
-              <label class="form__checkbox-label" for="white">Белый</label>
-            </div>
-            <div class="form__checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="grey" id="grey" checked>
-              <label  class="form__checkbox-label" for="grey">Серый</label>
-            </div>
-            <div class="form__checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="tiffany" id="tiffany">
-              <label  class="form__checkbox-label" for="tiffany">«Тиффани»</label>
-            </div>
-            <div class="form__checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="black" id="black">
-              <label class="form__checkbox-label" for="black">Черный</label>
-            </div>
-            <div class="form__checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="pink" id="pink">
-              <label class="form__checkbox-label" for="pink">Розовый</label>
-            </div>
-            <div class="form__checkbox">
-              <input class="form__checkbox-input" type="checkbox" name="orange" id="orange">
-              <label class="form__checkbox-label" for="orange">Оранжевый</label>
+            <div class="form__group">
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" name="white" id="white" checked>
+                <label class="form__checkbox-label" for="white">Белый</label>
+              </div>
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" name="grey" id="grey" checked>
+                <label  class="form__checkbox-label" for="grey">Серый</label>
+              </div>
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" name="tiffany" id="tiffany">
+                <label  class="form__checkbox-label" for="tiffany">«Тиффани»</label>
+              </div>
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" name="black" id="black">
+                <label class="form__checkbox-label" for="black">Черный</label>
+              </div>
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" name="pink" id="pink">
+                <label class="form__checkbox-label" for="pink">Розовый</label>
+              </div>
+              <div class="form__checkbox">
+                <input class="form__checkbox-input" type="checkbox" name="orange" id="orange">
+                <label class="form__checkbox-label" for="orange">Оранжевый</label>
+              </div>
             </div>
           </div>
         </section>
         <section class="form__item">
           <div class="form__inner">
             <h2 class="form__title">ФИО</h2>
-            <div class="form__field">
-              <label class="form__field-label" for="name">Имя:</label>
-              <input class="form__field-input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-            </div>
-            <div class="form__field">
-              <label class="form__field-label" for="surname">Фамилия:</label>
-              <input class="form__field-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-            </div>
-            <div class="form__field">
-              <label class="form__field-label" for="patronymic">Отчество:</label>
-              <input class="form__field-input" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+            <div class="form__group">
+              <div class="form__field">
+                <label class="form__field-label" for="name">Имя:</label>
+                <input class="form__field-input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="form__field">
+                <label class="form__field-label" for="surname">Фамилия:</label>
+                <input class="form__field-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="form__field">
+                <label class="form__field-label" for="patronymic">Отчество:</label>
+                <input class="form__field-input" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+              </div>
             </div>
           </div>
         </section>
         <section class="form__item">
           <div class="form__inner">
-            <div class="form__field">
+            <div class="form__field form__field--connect">
               <label class="form__field-label form__field-label--connect" for="tel">Тел</label>
               <input class="form__field-input form__field-input--tel" type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*" required>
             </div>
-            <div class="form__field">
+            <div class="form__field form__field--connect">
               <label class="form__field-label form__field-label--connect" for="email">E-mail</label>
               <input class="form__field-input form__field-input--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
             </div>
@@ -104,8 +110,8 @@
         </section>
         <section class="form__item">
           <div class="form__inner">
-            <div class="form__field">
-              <label class="form__field-label form__field-label--connect" for="message">Доп</label>
+            <div class="form__field form__field--connect">
+              <label class="form__field-label form__field-label--connect form__field-label--textarea" for="message">Доп</label>
               <textarea class="form__field-input form__field-input--textarea" name="message" id="message">Опишите все ваши пожелания к заказу</textarea>
             </div>
           </div>
@@ -119,6 +125,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner">
+        <a class="logo logo--page-footer" href="index.html" title="На главную">
+          <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
+        </a>
         <div class="social  page-footer__social">
           <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
           <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
