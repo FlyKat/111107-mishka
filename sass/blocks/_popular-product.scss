@@ -1,9 +1,33 @@
 .popular-product {
-  font-family: $font-family;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: $text-color--muted;
+
+  @media #{$tablet} {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media #{$desktop} {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
+
+.popular-product__inner {
+  @include container();
+
+  @media #{$tablet} {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.popular-product__inner > * {
+  outline: 1px solid green;
 }
 
 .popular-product__title {
@@ -11,25 +35,72 @@
   font-weight: 700;
   line-height: 30px;
   color: $text-color;
+
+  @media #{$tablet} {
+    width: 500px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media #{$desktop} {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
 }
 
-.popular-prodact__mark {
+.popular-product__mark {
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   color: $brand-color--light;
+
+  @media #{$tablet} {
+    width: 150px;
+    line-height: 17px;
+  }
+
+  @media #{$desktop} {
+    line-height: 17px;
+  }
+
 }
 
 .popular-product__desc {
-  font-size: 17px;
-  line-height: 30px;
+
+  @media #{$tablet} {
+    width: 300px;
+  }
 }
 
 .popular-product__spec {
   line-height: 20px;
+  margin-bottom: 28px;
 }
 
-.product-week__price {
+.popular-product__definition {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $border-color;
+}
+
+.popular-product__value {
+  padding-left: 30px;
+  padding-right: 20px;
+  border-bottom: 1px solid $border-color--light;
+}
+
+.popular-product__img {
+  @media #{$tablet} {
+    outline: 1px solid red;
+    width:334px;
+    height: 402px;
+  }
+}
+
+.popular-product__price {
+  margin-bottom: 27px;
   font-size: 17px;
   font-weight: 700;
+  text-align: center;
 }

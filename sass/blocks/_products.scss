@@ -1,0 +1,28 @@
+.products {
+  @media #{$desktop} {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+  }
+}
+
+.products__item {
+  margin-bottom: 30px;
+
+  @media #{$tablet} {
+    margin-bottom: 54px;
+  }
+
+  @media #{$desktop} {
+    margin-right: 50px;
+    margin-bottom: 57px;
+
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+  }
+
+}

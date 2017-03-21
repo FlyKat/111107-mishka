@@ -1,20 +1,94 @@
-.features {
-  font-family: $font-family;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 20px;
-  color: $text-color;
-}
-
-.features__wrapper {
+.features__inner {
   @include container();
 }
 
 .features__title {
   font-size: 25px;
   line-height: 30px;
+  color: $text-color;
+
+  @media #{$tablet} {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media #{$desktop} {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
 }
 
 .features__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media #{$tablet} {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop} {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 175px;
+  }
+
+}
+
+.features__item {
+  outline: 1px solid green;
+  padding-top: 85px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $text-color;
+
+  @media #{$tablet} {
+    padding-right: 20px;
+    width: 314px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media #{$desktop} {
+    padding-right: 20px;
+    width: 330px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media #{$tablet, $desktop} {
+
+  .features__item {
+
+    &--eco {
+      order: 1;
+    }
+
+    &--nordic {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--domestic {
+      order: 4;
+    }
+
+    &--pack {
+      order: 6;
+    }
+
+  }
+
 }

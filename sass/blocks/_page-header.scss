@@ -1,0 +1,101 @@
+.page-header {
+  min-height: 256px;
+  background: $background-color;
+
+  &--index {
+    min-height: 568px;
+    background: #fafafa url('../img/hero-mobile@1x.jpg') no-repeat center;
+  }
+
+  @media #{$tablet} {
+    min-height: 310px;
+
+    &--index {
+      min-height: 834px;
+    }
+  }
+
+  @media #{$tablet} {
+    min-height: 345px;
+
+    &--index {
+      min-height: 834px;
+    }
+
+  }
+
+}
+
+.page-header__nav {
+  background: $main-color;
+}
+
+.page-header__inner {
+  @include container();
+}
+
+.page-header__link {
+  display: block;
+  padding: 28px 10px 27px 46px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: $text-color;
+  border-top: 1px solid $border-color--light;
+  border-bottom: 1px solid $border-color--light;
+}
+
+.page-header__title {
+  @include container();
+  padding: 73px 0;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+
+  &--index {
+    padding-bottom: 120px;
+  }
+
+
+  @media #{$tablet} {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media #{$desktop} {
+    width: 700px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+}
+
+.page-header__promo {
+
+  @media #{$tablet} {
+    @include container();
+  }
+
+  @media #{$desktop} {
+    @include container();
+  }
+
+}
+
+.page-header__promo-btn {
+  display: block;
+  padding: 30px;
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $main-color;
+
+  &--interior {
+    background: $brand-color--light;
+  }
+
+  &--toys {
+    background-color: $brand-color--dark;
+  }
+}

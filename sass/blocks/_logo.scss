@@ -1,0 +1,18 @@
+.logo  {
+
+  &--page-footer {
+    display: none;
+
+    @media #{$tablet} {
+      display: block;
+      width: 102px;
+    }
+
+    @media #{$desktop} {
+      display: block;
+      width: 102px;
+    }
+
+  }
+
+}

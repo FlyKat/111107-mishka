@@ -1,14 +1,62 @@
-.production-process {
-  @include container();
-  font-family: $font-family;
+.video-block {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   color: $text-color--muted;
+
+  @media #{$tablet} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media #{$desktop} {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 455px;
+  }
 }
 
-.production-process__title {
+.video-block__title {
+  padding: 22px 0 24px 87px;
   font-size: 17px;
   font-weight: 700;
   color: $text-color;
+  border: 1px solid $border-color--light;
+  border-bottom: none;
+
+  @media #{$desktop} {
+    outline: 1px solid red;
+    padding: 0;
+    width: 360px;
+  }
+
+}
+
+.video-block__video {
+
+  @media #{$tablet} {
+    outline: 1px solid red;
+    width: 668px;
+    height: 458px;
+    order: -1;
+  }
+
+  @media #{$desktop} {
+    outline: 1px solid red;
+    width: 682px;
+    height: 455px;
+    order: -1;
+  }
+
+}
+
+.video-block__desc {
+  margin: 20px 0 27px 32px;
+  width: 185px;
+}
+
+.video-block__btn {
+  margin: 32px;
+  margin-top: 27px;
 }

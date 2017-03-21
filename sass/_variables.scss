@@ -1,5 +1,9 @@
-$color-main: #fff;
-$color-background: #f1f1f1;
+$main-color: #fff;
+$background-color: #f1f1f1;
+$border-color--light: #ececec;
+$border-color: #e5e5e5;
+$border-color--dark: #444;
+$border-color--darken: #000;
 $text-color: #000;
 $text-color--muted: #444;
 $brand-color--lighten: #59d5bc;
@@ -8,4 +12,6 @@ $brand-color: #62d1ba;
 $brand-color--dark: #56c3b2;
 $brand-color--darken: #46c1ae;
 
-$font-family: 'Open Sans', 'Arial', sans-serif;
+$mobile: 'only screen and (max-width: 767px)';
+$tablet: 'only screen and (min-width: 768px) and (max-width: 1149px)';
+$desktop: 'only screen and (min-width: 1150px)';

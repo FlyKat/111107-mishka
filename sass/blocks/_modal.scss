@@ -1,0 +1,9 @@
+.modal__inner {
+  @include container();
+
+  @media #{$tablet, $desktop} {
+    @include modal-container();
+  }
+
+
+}
