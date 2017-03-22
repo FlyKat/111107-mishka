@@ -1,4 +1,15 @@
 .logo  {
+  outline: 1px dashed green;
+
+  @media #{$tablet} {
+    width: 113px;
+  }
+
+  @media #{$desktop} {
+    width: 149px;
+  }
+
+
 
   &--page-footer {
     display: none;

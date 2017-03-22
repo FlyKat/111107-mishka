@@ -32,6 +32,62 @@
 
 .page-header__inner {
   @include container();
+
+  @media #{$tablet} {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop} {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+.page-header__logo (
+
+  @media
+)
+
+.page-header__list {
+  outline: 1px dashed red;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media #{$tablet} {
+    display: flex;
+
+    &--main-menu {
+      width: 334px;
+    }
+
+    &--search-cart {
+      order: -1;
+      width: 398px;
+    }
+
+    &--new-sale {
+      display: none;
+    }
+  }
+
+  @media #{$desktop} {
+    display: flex;
+  }
+}
+
+.page-header__btn {
+
+  @media #{$tablet} {
+    display: none;
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
+
 }
 
 .page-header__link {
@@ -44,6 +100,15 @@
   color: $text-color;
   border-top: 1px solid $border-color--light;
   border-bottom: 1px solid $border-color--light;
+
+  @media #{$tablet} {
+    padding: 0;
+  }
+
+  @media #{$desktop} {
+    padding: 0;
+  }
+
 }
 
 .page-header__title {
@@ -75,10 +140,12 @@
 
   @media #{$tablet} {
     @include container();
+    display: flex;
   }
 
   @media #{$desktop} {
     @include container();
+    display: flex;
   }
 
 }
@@ -98,4 +165,14 @@
   &--toys {
     background-color: $brand-color--dark;
   }
+
+  @media #{$tablet} {
+    width: 334px;
+  }
+
+  @media #{$desktop} {
+    width: 525px;
+  }
+
+
 }
