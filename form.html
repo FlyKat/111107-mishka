@@ -11,16 +11,34 @@
       <nav class="page-header__nav">
         <div class="page-header__inner">
           <button class="page-header__btn page-header btn--closed" type="button">Открыть меню</button>
-          <a href="index.html" title="На главную">
-            <img class="logo  page-header__link" src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
+          <a class="logo  page-header__link  page-header__logo" href="index.html" title="На главную">
+            <img  src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
           </a>
-          <a class="page-header__link" href="catalog.html">Каталог товаров</a>
-          <a class="page-header__link" href="form.html">Вязание на заказ</a>
-          <a class="page-header__link main-header__link--search" href="#">Поиск по сайту</a>
-          <a class="page-header__link main-header__link--cart" href="#">Корзина: пока пуста</a>
-          <a class="page-header__link page-header__link--desktop" href="#">Новые поступления</a>
-          <a class="page-header__link page-header__link--desktop" href="#">Распродажа</a>
-          <span class="page-header__link page-header__link--info">Бесплатная доставка по России</span>
+          <ul class="page-header__list page-header__list--main-menu">
+            <li class="page-header__item">
+              <a class="page-header__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="page-header__list page-header__list--search-cart">
+            <li class="page-header__item ">
+            <a class="page-header__link page-header__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link page-header__link--cart" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="page-header__list page-header__list--new-sale">
+            <li class="page-header__item ">
+            <a class="page-header__link" href="#">Новые поступления</a>
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <span class="page-header__info">Бесплатная доставка по России</span>
         </div>
       </nav>
       <h1 class="page-header__title">Вязание на заказ</h1>
