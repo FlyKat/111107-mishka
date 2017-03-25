@@ -15,3 +15,5 @@ $brand-color--darken: #46c1ae;
 $mobile: 'only screen and (max-width: 767px)';
 $tablet: 'only screen and (min-width: 768px) and (max-width: 1149px)';
 $desktop: 'only screen and (min-width: 1150px)';
+
+$retina: '(min-resolution: 144dpi), (min-resolution: 1.5ppx)';

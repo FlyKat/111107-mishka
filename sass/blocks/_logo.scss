@@ -2,11 +2,11 @@
   outline: 1px dashed green;
 
   @media #{$tablet} {
-    width: 113px;
+  //width: 113px;
   }
 
   @media #{$desktop} {
-    width: 149px;
+    //width: 149px;
   }
 
 
@@ -16,12 +16,12 @@
 
     @media #{$tablet} {
       display: block;
-      width: 102px;
+      //width: 102px;
     }
 
     @media #{$desktop} {
       display: block;
-      width: 102px;
+      //width: 102px;
     }
 
   }

@@ -1,31 +1,3 @@
-.page-header {
-  min-height: 256px;
-  background: $background-color;
-
-  &--index {
-    min-height: 568px;
-    background: #fafafa url('../img/hero-mobile@1x.jpg') no-repeat center;
-  }
-
-  @media #{$tablet} {
-    min-height: 310px;
-
-    &--index {
-      min-height: 834px;
-    }
-  }
-
-  @media #{$tablet} {
-    min-height: 345px;
-
-    &--index {
-      min-height: 834px;
-    }
-
-  }
-
-}
-
 .page-header__nav {
   background: $main-color;
 }
@@ -36,13 +8,26 @@
   @media #{$tablet} {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media #{$desktop} {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
+}
+
+.page-header__logo {
+
+  @media #{$tablet} {
+    order: -2;
+  }
+
+  @media #{$desktop} {
+    order: -1;
+  }
 }
 
 .page-header__list {
@@ -58,18 +43,23 @@
       width: 334px;
     }
 
-    &--search-cart {
+    &--user-menu {
       order: -1;
       width: 398px;
     }
 
-    &--new-sale {
+    &--second-menu {
       display: none;
     }
   }
 
   @media #{$desktop} {
     display: flex;
+    width: 420px;
+
+    &--main-menu {
+      order: -2;
+    }
   }
 }
 
@@ -106,6 +96,64 @@
 
 }
 
+.page-header__list--main-menu  {
+  .page-header__link {
+    @media #{$tablet} {
+      font-size: 15px;
+    }
+  }
+}
+
+.page-header__list--second-menu {
+  .page-header__link {
+    @media #{$desktop} {
+      font-size: 15px;
+    }
+  }
+}
+
+.page-header__info {
+  font-size: 15px;
+}
+
+.page-header__intro {
+  outline: 1px solid blue;
+  min-height: 177px;
+  background: $background-color;
+
+  &--index {
+    min-height: 489px;
+    background: #fafafa url('../img/hero-mobile@1x.jpg') no-repeat 50% 0%;
+
+    @media #{$retina} {
+      background: #fafafa url('../img/hero-mobile@2x.jpg') no-repeat 50% 0%;
+      background-size: 320px auto;
+    }
+
+    @media #{$tablet} {
+      margin-top: -50px;
+      min-height: 747px;
+      background: #fafafa url('../img/hero-desktop@1x.jpg') no-repeat 50% 100%;
+
+      @media #{$retina} {
+        background: #fafafa url('../img/hero-desktop@2x.jpg') no-repeat 50% 100%;
+        background-size: 768px auto;
+      }
+    }
+
+    @media #{$desktop} {
+      margin-top: -30px;
+      min-height: 747px;
+      background: #fafafa url('../img/hero-desktop@1x.jpg') no-repeat 50% 100%;
+
+      @media #{$retina} {
+        background: #fafafa url('../img/hero-desktop@2x.jpg') no-repeat 50% 100%;
+        background-size: 1150px auto;
+      }
+    }
+  }
+}
+
 .page-header__title {
   @include container();
   padding: 73px 0;
@@ -114,19 +162,32 @@
   text-align: center;
 
   &--index {
-    padding-bottom: 120px;
+    padding-bottom: 118px;
   }
 
 
   @media #{$tablet} {
+    padding-top: 95px;
+    padding-bottom: 78px;
     font-size: 43px;
     line-height: 50px;
+
+    &--index {
+      padding-top: 156px;
+      padding-bottom: 372px;
+    }
   }
 
   @media #{$desktop} {
-    width: 700px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     font-size: 53px;
     line-height: 57px;
+
+    &--index {
+      padding-top: 160px;
+      padding-bottom: 355px;
+    }
   }
 
 }
@@ -147,7 +208,7 @@
 
 .page-header__promo-btn {
   display: block;
-  padding: 30px;
+  padding: 28px;
   font-size: 19px;
   font-weight: 700;
   text-decoration: none;
@@ -168,6 +229,5 @@
   @media #{$desktop} {
     width: 525px;
   }
-
 
 }
