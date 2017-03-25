@@ -36,6 +36,14 @@
   padding: 0;
   list-style: none;
 
+  @media #{$mobile} {
+
+    &--second-menu {
+      display: none;
+    }
+
+  }
+
   @media #{$tablet} {
     display: flex;
 
@@ -114,6 +122,10 @@
 
 .page-header__info {
   font-size: 15px;
+
+  @media #{$mobile} {
+    display: none;
+  }
 }
 
 .page-header__intro {
