@@ -93,10 +93,10 @@
   height: 457px;
   background: $background-color url('../img/map-mobile@1x.jpg') no-repeat center;
 
-   @media #{$retina} {
-     background: $background-color url('../img/map-mobile@2x.jpg') no-repeat center;
-     background-size: 320px auto;
-   }
+    @media #{$retina} {
+      background: $background-color url('../img/map-mobile@2x.jpg') no-repeat center;
+      background-size: 320px auto;
+    }
 
   @media #{$tablet} {
     margin-left: -50px;
