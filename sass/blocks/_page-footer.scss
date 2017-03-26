@@ -27,6 +27,20 @@
   }
 }
 
+.page-footer__logo {
+  display: none;
+
+     @media #{$tablet} {
+       display: block;
+      //width: 102px;
+    }
+
+     @media #{$desktop} {
+       display: block;
+      //width: 102px;
+    }
+}
+
 .page-footer__social {
   padding: 24px 22px 26px 57px;
   padding-top: 24px;

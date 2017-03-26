@@ -1,17 +1,55 @@
 .page-header__nav {
-  background: $main-color;
+
+  @media #{$mobile} {
+    position: relative;
+    margin: 0 auto;
+    width: 320px;
+    min-height: 80px;
+    background: $main-color;
+
+    &--closed .page-header__list {
+      display: none;
+    }
+
+    &--opened .page-header__inner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      background: $main-color;
+    }
+
+    &--nojs .page-header__btn {
+      display: none;
+    }
+
+    &--nojs .page-header__inner {
+      position: static;
+      height: auto;
+    }
+
+    &--nojs .page-header__list {
+      display: block;
+    }
+
+  }
 }
 
 .page-header__inner {
-  @include container();
+
+  @media #{$mobile} {
+    width: 320px;
+  }
 
   @media #{$tablet} {
+    @include container();
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   @media #{$desktop} {
+    @include container();
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -20,28 +58,54 @@
 }
 
 .page-header__logo {
+  display: block;
+  padding-left: 115px;
+  padding-top: 20px;
+  min-height: 60px;
 
   @media #{$tablet} {
     order: -2;
+    margin-left: 0;
   }
 
   @media #{$desktop} {
     order: -1;
+    margin-left: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
+.page-header__logo img {
+
+
+  @media #{$tablet} {
+    width: 113px;
+    height: auto;
+  }
+
+  @media #{$desktop} {
+    width: 149px;
+    height: auto;
+  }
+
+}
+
 .page-header__list {
-  outline: 1px dashed red;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media #{$mobile} {
-
     &--second-menu {
       display: none;
     }
-
   }
 
   @media #{$tablet} {
@@ -72,6 +136,17 @@
 }
 
 .page-header__btn {
+  position: absolute;
+  top: 32px;
+  right: 31px;
+  z-index: 2;
+  display: block;
+  width: 20px;
+  height: 14px;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+
 
   @media #{$tablet} {
     display: none;
@@ -80,12 +155,50 @@
   @media #{$desktop} {
     display: none;
   }
+}
 
+.page-header__nav--closed .page-header__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background: $nav-btn-color;
+  box-shadow: 0 7px 0 0 $nav-btn-color,
+              0 14px 0 0 $nav-btn-color;
+
+}
+
+.page-header__nav--opened .page-header__btn {
+  top: 32px;
+  right: 31px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    background: $nav-btn-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .page-header__link {
   display: block;
-  padding: 28px 10px 27px 46px;
+  padding: 27px 10px;
+  padding-left: 76px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -100,8 +213,19 @@
 
   @media #{$desktop} {
     padding: 0;
+
+  }
+}
+
+.page-header__link[href] {
+
+  &:hover {
+    opacity: 0.6;
   }
 
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__list--main-menu  {
@@ -133,9 +257,9 @@
   min-height: 177px;
   background: $background-color;
 
-  &--index {
+    &--index {
     min-height: 489px;
-    background: #fafafa url('../img/hero-mobile@1x.jpg') no-repeat 50% 0%;
+    background: #fafafa url('../img/hero-mobile@1x.jpg') no-repeat 50% -20px;
 
     @media #{$retina} {
       background: #fafafa url('../img/hero-mobile@2x.jpg') no-repeat 50% 0%;

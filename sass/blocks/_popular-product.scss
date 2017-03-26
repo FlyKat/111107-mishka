@@ -38,10 +38,6 @@
   }
 }
 
-.popular-product__inner > * {
-  outline: 1px solid green;
-}
-
 .popular-product__header {
   @media #{$tablet} {
     display: flex;

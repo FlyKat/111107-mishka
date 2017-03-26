@@ -8,16 +8,16 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__nav">
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
         <div class="page-header__inner">
-          <a class="logo page-header__logo" href="index.html" title="На главную">
+          <a class="page-header__logo" href="index.html" title="На главную">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img  src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
             </picture>
           </a>
-          <button class="page-header__btn page-header btn--closed" type="button">Открыть меню</button>
+          <button class="page-header__btn" type="button">Открыть меню</button>
           <ul class="page-header__list page-header__list--main-menu">
             <li class="page-header__item">
               <a class="page-header__link" href="catalog.html">Каталог товаров</a>
@@ -62,7 +62,7 @@
             <p class="popular-product__mark">Товар недели</p>
           </header>
           <div class="popular-product__info">
-            <p class="popular-product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <p class="popular-product__desc">Экологически чистая пряжа, ручная работа.</p>
             <table class="popular-product__spec">
               <tr>
                 <td class="popular-product__definition">Цвет:</td>
@@ -80,8 +80,8 @@
           </div>
           <div class="popular-product__img">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, triple-set-tablet@2x.jpg 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
             </picture>
           </div>
@@ -148,7 +148,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner">
-        <a class="logo logo--page-footer" href="index.html" title="На главную">
+        <a class="page-footer__logo" href="index.html" title="На главную">
           <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
         </a>
         <div class="social  page-footer__social">
@@ -181,5 +181,6 @@
       </div>
     </div>
     <!--end modal-->
+    <script src="js/script.js"></script>
   </body>
 </html>
