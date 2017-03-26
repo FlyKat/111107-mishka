@@ -1,8 +1,14 @@
+.features {
+  padding-top: 32px;
+  padding-bottom: 25px;
+}
+
 .features__inner {
   @include container();
 }
 
 .features__title {
+  margin: 0;
   font-size: 25px;
   line-height: 30px;
   color: $text-color;

@@ -1,5 +1,6 @@
 .shop-contacts {
   @include container();
+  padding-top: 40px;
   padding-bottom: 40px;
   font-size: 15px;
   font-weight: 400;
@@ -33,7 +34,7 @@
 
 .shop-contacts__title {
   margin: 0;
-  margin-top: 40px;
+  margin-bottom: 25px;
   font-size: 18px;
   font-weight: 700;
   color: $text-color;
@@ -53,6 +54,10 @@
 }
 
 .shop-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
   @media #{$tablet} {
     display: flex;
     flex-wrap: wrap;
@@ -60,10 +65,8 @@
 }
 
 .shop-contacts__item {
-  margin: 0;
-  padding: 0;
-  display: table-row;
-  list-style: none;
+  display: flex;
+  margin-bottom: 30px;
 
   @media #{$tablet} {
     width: 300px;;
@@ -76,18 +79,28 @@
 
 }
 
-.shop-contacts__definition {
-  display: table-cell;
+.shop-contacts__value {
+  padding-left: 32px;
 }
 
-.shop-contacts__value {
-  display: table-cell;
-  padding-left: 32px;
+.shop-contacts__link {
+  padding-bottom: 3px;
+  text-decoration: none;
+  color: $text-color--muted;
+  border-bottom: 1px solid $brand-color;
+
+  &:hover {
+    color: $brand-color--darken;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .shop-contacts__map {
   margin-left: -30px;
-  margin-top: 35px;
+  margin-top: 38px;
   margin-bottom: 38px;
   width: 320px;
   height: 457px;

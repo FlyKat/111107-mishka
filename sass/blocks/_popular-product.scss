@@ -1,7 +1,12 @@
 .popular-product {
+  padding-bottom: 36px;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  border-image-source: url('../img/bg-zigzag-line.svg'); //почему не работает??
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   color: $text-color--muted;
 
   @media #{$tablet} {
@@ -52,6 +57,8 @@
 }
 
 .popular-product__title {
+  margin: 0;
+  margin-bottom: 5px;
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
@@ -71,6 +78,8 @@
 }
 
 .popular-product__mark {
+  margin: 0;
+  margin-bottom: 23px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -104,6 +113,8 @@
 }
 
 .popular-product__desc {
+  margin: 0;
+  margin-bottom: 13px;
 
   @media #{$tablet} {
     width: 300px;
@@ -112,7 +123,7 @@
 
 .popular-product__spec {
   line-height: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .popular-product__definition {
@@ -122,12 +133,14 @@
 }
 
 .popular-product__value {
-  padding-left: 30px;
+  padding-left: 25px;
   padding-right: 20px;
   border-bottom: 1px solid $border-color--light;
 }
 
 .popular-product__img {
+  margin-bottom: 17px;
+
   @media #{$tablet} {
     position: absolute;
     bottom: 0;
@@ -154,7 +167,8 @@
 }
 
 .popular-product__price {
-  margin-bottom: 27px;
+  margin: 0;
+  margin-bottom: 26px;
   font-size: 17px;
   font-weight: 700;
   text-align: center;

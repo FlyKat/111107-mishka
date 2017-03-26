@@ -19,11 +19,11 @@
           </a>
           <button class="page-header__btn" type="button">Открыть меню</button>
           <ul class="page-header__list page-header__list--main-menu">
-            <li class="page-header__item">
-              <a class="page-header__link" href="catalog.html">Каталог товаров</a>
+            <li class="page-header__item page-header__item--main-menu">
+              <a class="page-header__link page-header__link--main-menu" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="form.html">Вязание на заказ</a>
+            <li class="page-header__item page-header__item--main-menu">
+              <a class="page-header__link page-header__link--main-menu" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="page-header__list page-header__list--user-menu">
@@ -35,11 +35,11 @@
             </li>
           </ul>
           <ul class="page-header__list page-header__list--second-menu">
-            <li class="page-header__item ">
-            <a class="page-header__link" href="#">Новые поступления</a>
+            <li class="page-header__item page-header__item--second--menu">
+            <a class="page-header__link page-header__link--second-menu" href="#">Новые поступления</a>
             </li>
-            <li class="page-header__item">
-              <a class="page-header__link" href="#">Распродажа</a>
+            <li class="page-header__item page-header__item--second-menu">
+              <a class="page-header__link page-header__link--second-menu" href="#">Распродажа</a>
             </li>
           </ul>
           <span class="page-header__info">Бесплатная доставка по России</span>
@@ -62,7 +62,7 @@
             <p class="popular-product__mark">Товар недели</p>
           </header>
           <div class="popular-product__info">
-            <p class="popular-product__desc">Экологически чистая пряжа, ручная работа.</p>
+            <p class="popular-product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
             <table class="popular-product__spec">
               <tr>
                 <td class="popular-product__definition">Цвет:</td>
@@ -89,7 +89,6 @@
             <p class="popular-product__price">Цена: 990 руб.</p>
             <a class="btn  popular-product__btn" href="#">Заказать</a>
           </div>
-
         </div>
       </article>
       <!--end popular-product-->
@@ -128,18 +127,18 @@
       <section class="shop-contacts">
         <div class="shop-contacts__info">
           <h2 class="shop-contacts__title">Контакты</h2>
-          <div class="shop-contacts__list">
-            <ul class="shop-contacts__item">
-              <li class="shop-contacts__definition">email:</li>
-              <li class="shop-contacts__value">
+          <ul class="shop-contacts__list">
+            <li class="shop-contacts__item">
+              <span class="shop-contacts__definition">e-mail:</span>
+              <span class="shop-contacts__value">
                 <a class="shop-contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </li>
-            </ul>
-            <ul class="shop-contacts__item">
-              <li class="shop-contacts__definition">aдрес:</li>
-              <li class="shop-contacts__value">г. Санкт-Петербург, ул.&nbspБольшая Конюшенная, д.&nbsp19/8,&nbspофис&nbsp101</li>
-            </ul>
-          </div>
+              </span>
+            </li>
+            <li class="shop-contacts__item">
+              <span class="shop-contacts__definition">aдрес:</span>
+              <span class="shop-contacts__value">г. Санкт-Петербург, ул.&nbspБольшая Конюшенная, д.&nbsp19/8,&nbspофис&nbsp101</span>
+            </li>
+          </ul>
         </div>
         <div class="shop-contacts__map" id="map"></div>
         <a class="btn  shop-contacts__btn" href="#">Напишите нам</a>
@@ -152,9 +151,9 @@
           <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="86" height="35">
         </a>
         <div class="social  page-footer__social">
-          <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
-          <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
-          <a class="social__btn social__btn--twit" href="#">Твиттер</a>
+          <a class="social__btn social__btn--inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
+          <a class="social__btn social__btn--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          <a class="social__btn social__btn--twit" href="#"><span class="visually-hidden">Твиттер</span></a>
         </div>
         <div class="copyright  page-footer__copyright">
           <a class="copyright__link" href="#">Разработано</a>

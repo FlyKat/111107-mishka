@@ -64,11 +64,15 @@
   min-height: 60px;
 
   @media #{$tablet} {
+    padding-top: 22px;
     order: -2;
-    margin-left: 0;
+    padding-left: 0;
   }
 
   @media #{$desktop} {
+    margin-right: 50px;
+    padding-top: 11px;
+    padding-left: 0;
     order: -1;
     margin-left: 0;
 
@@ -110,12 +114,16 @@
 
   @media #{$tablet} {
     display: flex;
+    flex-wrap: wrap;
 
     &--main-menu {
-      width: 334px;
+      margin-top: 18px;
+      width: 340px;
     }
 
     &--user-menu {
+      display: flex;
+      justify-content: flex-end;
       order: -1;
       width: 398px;
     }
@@ -127,17 +135,24 @@
 
   @media #{$desktop} {
     display: flex;
-    width: 420px;
 
     &--main-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
       order: -2;
+      width: 398px;
+    }
+
+    &--second-menu {
+      margin-top: 18px;
     }
   }
 }
 
 .page-header__btn {
   position: absolute;
-  top: 32px;
+  top: 31px;
   right: 31px;
   z-index: 2;
   display: block;
@@ -165,8 +180,8 @@
   width: 20px;
   height: 2px;
   background: $nav-btn-color;
-  box-shadow: 0 7px 0 0 $nav-btn-color,
-              0 14px 0 0 $nav-btn-color;
+  box-shadow: 0 6px 0 0 $nav-btn-color,
+              0 12px 0 0 $nav-btn-color;
 
 }
 
@@ -205,15 +220,69 @@
   text-decoration: none;
   color: $text-color;
   border-top: 1px solid $border-color--light;
-  border-bottom: 1px solid $border-color--light;
 
   @media #{$tablet} {
     padding: 0;
+    border: none;
+
+    &--search {
+      padding: 32px 0;
+      width: 83px;
+      font-size: 0;
+      border-left: 1px solid $border-color--light;
+    }
+
+    &--cart {
+      padding: 32px 0;
+      padding-left: 82px;
+      width: 182px;
+      border-left: 1px solid $border-color--light;
+    }
+
+    &--main-menu {
+      margin-right: 35px;
+    }
   }
 
   @media #{$desktop} {
     padding: 0;
+    border: none;
 
+    &--search {
+      padding: 32px 0;
+      width: 83px;
+      font-size: 0;
+      border-left: 1px solid $border-color--light;
+    }
+
+    &--cart {
+      padding: 32px 0;
+      padding-left: 82px;
+      width: 182px;
+      border-left: 1px solid $border-color--light;
+    }
+
+    &--main-menu {
+      padding: 32px 0;
+      width: 182px;
+    }
+
+    &--second-menu {
+      width: 180px;
+    }
+  }
+}
+
+.page-header__item--main-menu:nth-child(even) .page-header__link--main-menu {
+  @media #{$desktop} {
+    padding-left: 33px;
+    border-left: 1px solid $border-color--light;
+  }
+}
+
+.page-header__item--second-menu:nth-child(even) .page-header__link--second-menu {
+  @media #{$desktop} {
+    padding-left: 33px;
   }
 }
 
@@ -246,19 +315,29 @@
 
 .page-header__info {
   font-size: 15px;
+  line-height: 24px;
 
   @media #{$mobile} {
     display: none;
   }
+
+  @media #{$tablet} {
+    margin-top: 18px;
+  }
+
+  @media #{$desktop} {
+    margin-top:  18px;
+
+  }
 }
 
 .page-header__intro {
-  outline: 1px solid blue;
   min-height: 177px;
+  border-top: 1px solid $border-color--light;
   background: $background-color;
 
     &--index {
-    min-height: 489px;
+    //min-height: 488px;
     background: #fafafa url('../img/hero-mobile@1x.jpg') no-repeat 50% -20px;
 
     @media #{$retina} {
@@ -267,8 +346,8 @@
     }
 
     @media #{$tablet} {
-      margin-top: -50px;
-      min-height: 747px;
+      margin-top: -42px;
+    //  min-height: 747px;
       background: #fafafa url('../img/hero-desktop@1x.jpg') no-repeat 50% 100%;
 
       @media #{$retina} {
@@ -278,7 +357,7 @@
     }
 
     @media #{$desktop} {
-      margin-top: -30px;
+      margin-top: -46px;
       min-height: 747px;
       background: #fafafa url('../img/hero-desktop@1x.jpg') no-repeat 50% 100%;
 
@@ -292,13 +371,13 @@
 
 .page-header__title {
   @include container();
-  padding: 73px 0;
+  padding: 70px 0;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
 
   &--index {
-    padding-bottom: 118px;
+    padding-bottom: 120px;
   }
 
 
@@ -345,6 +424,7 @@
 .page-header__promo-btn {
   display: block;
   padding: 28px;
+  padding-right: 95px;
   font-size: 19px;
   font-weight: 700;
   text-decoration: none;
