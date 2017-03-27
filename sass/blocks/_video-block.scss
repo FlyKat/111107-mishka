@@ -19,28 +19,38 @@
     min-height: 458px;
     font-size: 15px;
     line-height: 30px;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba($border-color--darken, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba($border-color--darken, 0.1);
+    }
   }
 }
 
 .video-block__title {
+  margin: 0;
   padding: 22px 32px 24px 87px;
   font-size: 17px;
   font-weight: 700;
   color: $text-color;
 
   @media #{$tablet} {
-    margin: 41px;
+    margin: 38px;
+    margin-bottom: 30px;
     padding: 0;
-    padding-left: 65px;;
+    padding-left: 67px;;
     width: 360px;
     font-size: 20px;
     line-height: 24px;
   }
 
   @media #{$desktop} {
-    margin-left: 77px;
-    padding: 0;
-    width: 200px;
+    padding: 95px 120px 0 77px;
+    margin-bottom: 32px;
+    width: 170px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -48,6 +58,7 @@
 }
 
 .video-block__video {
+  background: $background-color url('../img/video-mobile@1x.jpg');
 
   @media #{$tablet} {
     width: 668px;
@@ -69,7 +80,7 @@
 }
 
 .video-block__info {
-  padding: 0 32px;
+  padding: 20px 40px 20px 32px;
 
   @media #{$tablet} {
     padding: 0 41px;
@@ -82,17 +93,22 @@
 }
 
 .video-block__desc {
+  margin: 0;
 
 }
 
 .video-block__btn {
   margin-top: 27px;
+  margin-bottom: 15px;
 
   @media #{$tablet} {
+    margin-top: 33px;
+    margin-bottom: 45px;
     width: 585px;
   }
 
   @media #{$desktop} {
+    margin-top: 48px;
     width: 230px;
   }
 }

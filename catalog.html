@@ -115,8 +115,14 @@
         <section class="video-block">
           <h2 class="video-block__title">Процесс производства</h2>
           <div class="video-block__video">
-            <video width="260" height="150" poster="img/video-mobile@1x.jpg" preload="none">
+            <video>
               <source src="#" type="#">
+              <div data-poster="img/video-mobile@1x.jpg"></div>
+              <div data-poster="img/video-mobile@2x.jpg" data-media="(min-device-pixel-ratio: 2.0)"></div>
+		          <div data-poster="img/video-tablet@1x.jpg" data-media="(min-width: 768px)"></div>
+              <div data-poster="img/video-tablet@2x.jpg" data-media="(min-width: 768px) and (min-device-pixel-ratio: 2.0)"></div>
+		          <div data-poster="img/video-desktop@1x.jpg" data-media="(min-width: 1150px)"></div>
+              <div data-poster="img/video-desktop@2x.jpg" data-media="(min-width: 1150px) and (min-device-pixel-ratio: 2.0)"></div>
             </video>
           </div>
           <div class="video-block__info">
