@@ -8,6 +8,8 @@
   color: $text-color--muted;
 
   @media #{$tablet} {
+    padding-top: 60px;
+    padding-bottom: 60px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -17,6 +19,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 105px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -26,8 +30,9 @@
 .shop-contacts__info {
 
   @media #{$desktop} {
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: 175px;
+    margin-bottom: 48px;
     width: 300px;
   }
 }
@@ -40,13 +45,14 @@
   color: $text-color;
 
   @media #{$tablet} {
+    margin-bottom: 50px;
     width: 500px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media #{$desktop} {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
     width: 300px;
     font-size: 53px;
     line-height: 57px;
@@ -69,8 +75,9 @@
   margin-bottom: 30px;
 
   @media #{$tablet} {
-    width: 300px;;
-    padding-right: 34px;
+    margin: 0;
+    width: 315px;;
+    padding-right: 15px;
   }
 
   @media #{$desktop} {
@@ -81,6 +88,10 @@
 
 .shop-contacts__value {
   padding-left: 32px;
+
+  @media #{$tablet} {
+    padding-left: 28px;
+  }
 }
 
 .shop-contacts__link {
@@ -99,8 +110,8 @@
 }
 
 .shop-contacts__map {
-  margin-left: -30px;
   margin-top: 38px;
+  margin-left: -30px;
   margin-bottom: 38px;
   width: 320px;
   height: 457px;
@@ -112,7 +123,9 @@
     }
 
   @media #{$tablet} {
+    margin-top: 52px;
     margin-left: -50px;
+    margin-bottom: 55px;
     width: 768px;
     background: $background-color url('../img/map-tablet@1x.jpg') no-repeat center;
 
@@ -124,7 +137,7 @@
 
   @media #{$desktop} {
     position: absolute;
-    bottom: 0;
+    top: 70px;
     right: 50px;
     margin: 0;
     width: 525px;
@@ -142,10 +155,11 @@
 
   @media #{$tablet} {
     margin: 0 auto;
+    width: 230px;
   }
 
   @media #{$desktop} {
-
     margin-left: 175px;
+    width: 230px;
   }
 }
