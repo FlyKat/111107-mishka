@@ -1,20 +1,18 @@
 .popular-product {
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 36px;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  border-image-source: url('../img/bg-zigzag-line.svg'); //почему не работает??
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
   color: $text-color--muted;
 
   @media #{$tablet} {
     padding-top: 45px;
-    padding-bottom: 65px;
+    padding-bottom: 67px;
     font-size: 17px;
     line-height: 30px;
+    background: url('../img/bg-zigzag-line.svg') repeat-x 0% 100%;
+    background-size: 768px 17px;
   }
 
   @media #{$desktop} {
@@ -56,12 +54,12 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   @media #{$desktop} {
     margin-top: 50px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +69,7 @@
 
 .popular-product__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
@@ -103,7 +101,7 @@
 
   @media #{$tablet} {
     margin: 0;
-    margin-right: 28px;
+    margin-right: 25px;
     width: 75px;
     line-height: 17px;
     text-align: center;
@@ -121,7 +119,7 @@
 }
 
 .popular-product__info {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   @media #{$tablet} {
     margin-bottom: 55px;
@@ -138,19 +136,20 @@
 
 .popular-product__desc {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 
   @media #{$tablet} {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     width: 300px;
   }
 
   @media #{$desktop} {
-    margin-bottom: 50px;
+    margin-bottom: 41px;
   }
 }
 
 .popular-product__spec {
+  border-collapse: collapse;
   line-height: 20px;
 
   @media #{$tablet} {
@@ -169,17 +168,19 @@
 }
 
 .popular-product__value {
-  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 26px;
   padding-right: 20px;
   border-bottom: 1px solid $border-color--light;
 }
 
 .popular-product__img {
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 
   @media #{$tablet} {
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     right: 50px;
     display: block;
     margin: 0;
@@ -211,7 +212,7 @@
   text-align: center;
 
   @media #{$tablet} {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
     font-size: 20px;
     line-height: 24px;
   }

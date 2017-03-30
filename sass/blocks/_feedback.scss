@@ -8,8 +8,10 @@
 
   @media #{$tablet} {
     padding: 0;
-    padding-bottom: 85px;
+    padding-bottom: 80px;
     font-size: 17px;
+    background: url('../img/bg-zigzag-line.svg') repeat-x 0% 100%;
+    background-size: 768px 17px;
   }
 
   @media #{$desktop} {
@@ -26,8 +28,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
-    padding-top: 70px;
+    align-items: flex-start;
+    padding-top: 83px;
     padding-bottom: 20px;
     background: url('../img/review@1x.jpg') no-repeat left;
 
@@ -43,8 +45,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
-    padding-top: 60px;
+    align-items: flex-start;
+    padding-top: 70px;
     padding-bottom: 60px;
     background: url('../img/review@1x.jpg') no-repeat left;
     background-position: 50px;
@@ -67,16 +69,14 @@
 
   @media #{$tablet} {
     order: -2;
-    margin-top: 4px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     font-size: 43px;
-    line-height: 50px;
+    line-height: 45px;
   }
 
   @media #{$desktop} {
     order: -2;
-    margin-top: 2px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     margin-left: 175px;
     font-size: 53px;
     line-height: 57px;
@@ -89,6 +89,7 @@
 
   @media #{$desktop} {
     margin-left: 175px;
+    margin-right: 100px;
   }
 }
 
@@ -97,7 +98,7 @@
   margin-bottom: 26px;
 
   @media #{$tablet} {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 
   @media #{$desktop} {
@@ -127,8 +128,8 @@
 
   @media #{$tablet} {
     position: absolute;
-    bottom: 50px;
-    right: 52px;
+    bottom: 54px;
+    right: 54px;
     margin: 0;
     width: 167px;
   }
@@ -154,6 +155,14 @@
     background: url('../img/icon-right-arrow.svg') no-repeat center;
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media #{$tablet, $desktop} {
     border: none;
   }
@@ -162,8 +171,14 @@
 
 .feedback__btn {
 
-  @media #{$tablet, $desktop} {
+  @media #{$tablet} {
     order: -1;
+    width: 177px;
+  }
+
+  @media #{$desktop} {
+    order: -1;
+    margin-top: 10px;
     width: 177px;
   }
 }

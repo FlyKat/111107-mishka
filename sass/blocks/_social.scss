@@ -1,31 +1,22 @@
 .social {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  width: 175px;
 }
 
 .social__btn {
-  @include img-replacement();
-  display: inline-block;
   margin-right: 40px;
   text-decoration: none;
-  vertical-align: top;
 
-  &--inst {
-    width: 22px;
-    height: 21px;
-    background: url('../img/icon-insta.svg') no-repeat center;
-  }
+  @media #{$desktop} {
 
-  &--fb {
-    width: 15px;
-    height: 29px;
-    background: url('../img/icon-fb.svg') no-repeat center;
-  }
+    &:hover,
+    &:focus {
+      fill: $brand-color--darken;
+    }
 
-  &--twit {
-    width: 24px;
-    height: 20px;
-    background: url('../img/icon-twitter.svg') no-repeat center;
+    &:active {
+      fill: rgba($brand-color--darken, 0.3);
+    }
   }
 }

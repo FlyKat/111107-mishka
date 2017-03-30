@@ -3,7 +3,7 @@
   padding-bottom: 25px;
 
   @media #{$tablet} {
-    padding-top: 56px;
+    padding-top: 50px;
     padding-bottom: 80px;
   }
 
@@ -19,16 +19,19 @@
 
 .features__title {
   margin: 0;
+  margin-bottom: 3px;
   font-size: 25px;
   line-height: 30px;
   color: $text-color;
 
   @media #{$tablet} {
+    margin: 0;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media #{$desktop} {
+    margin: 0;
     padding-left: 175px;
     font-size: 53px;
     line-height: 57px;
@@ -44,7 +47,7 @@
   @media #{$tablet} {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -8px;
+    margin-top: -5px;
   }
 
   @media #{$desktop} {
@@ -57,7 +60,8 @@
 }
 
 .features__item {
-  padding-top: 85px;
+  position: relative;
+  padding-top: 83px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -72,7 +76,7 @@
   }
 
   @media #{$desktop} {
-    padding-top: 113px;
+    padding-top: 112px;
     padding-right: 20px;
     width: 330px;
     font-size: 20px;
@@ -107,7 +111,12 @@
     &--pack {
       order: 6;
     }
-
   }
+}
 
+.features__icon {
+  position: absolute;
+  top: 30px;
+  left: 6px;
+  fill: $brand-color--light;
 }

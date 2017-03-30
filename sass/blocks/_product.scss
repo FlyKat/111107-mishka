@@ -1,4 +1,5 @@
 .product {
+  //position: relative;
   width: 260px;
 
   @media #{$tablet} {
@@ -24,16 +25,29 @@
 
 .product__img-link {
 
-  @media #{$tablet} {
-    display: block;
-    width: 334px;
-    background: $background-color;
-  }
+
 
 }
 
 .product__img-link img {
   display: block;
+
+/*  @media #{$tablet} {
+    display: block;
+    width: 334px;
+    height: 334px;
+    background: $background-color;
+  }
+
+  @media #{$desktop} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 316px;
+    height: 462px;
+    background: $background-color;
+  }*/
 }
 
 .product__desc {
