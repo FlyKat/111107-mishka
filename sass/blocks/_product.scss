@@ -1,5 +1,4 @@
 .product {
-  //position: relative;
   width: 260px;
 
   @media #{$tablet} {
@@ -20,42 +19,17 @@
       box-shadow: 0 3px 5px 0 rgba($border-color--darken, 0.1);
     }
   }
-
-}
-
-.product__img-link {
-
-
-
 }
 
 .product__img-link img {
   display: block;
-
-/*  @media #{$tablet} {
-    display: block;
-    width: 334px;
-    height: 334px;
-    background: $background-color;
-  }
-
-  @media #{$desktop} {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 316px;
-    height: 462px;
-    background: $background-color;
-  }*/
 }
 
 .product__desc {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: -10px;
-  padding: 28px 28px 0 27px;
+  padding: 27px 28px 0 27px;
   border: 1px solid $border-color--light;
 
   @media #{$tablet} {
@@ -67,14 +41,25 @@
   @media #{$desktop} {
     flex-grow: 1;
     margin: 0;
-    padding: 30px 32px 0 25px;
+    padding: 25px 32px 0 25px;
   }
+}
 
+.product__link {
+  @media #{$desktop} {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .product__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -93,7 +78,7 @@
 
 .product__spec {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
@@ -108,24 +93,34 @@
     margin-bottom: 15px;
     font-size: 15px;
   }
-
 }
 
 .product__buy {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin-top: auto;
-  padding: 27px 0;
+  padding-top: 17px;
+  padding-bottom: 25px;
+  border-top: 1px solid $border-color--light;
+
+  @media #{$tablet} {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    width: 270px;
+  }
 
   @media #{$desktop} {
-    padding: 20px 0;
+    padding-top: 18px;
+    padding-bottom: 20px;
   }
 }
 
 .product__price {
   margin: 0;
-  width: 200px;
+  width: 150px;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
@@ -138,14 +133,17 @@
   @media #{$desktop} {
     font-size: 17px;
   }
-
 }
 
 .product__cart {
-  @include img-replacement;
-  margin: 0;
-  display: block;
-  width: 30px;
-  height: 19px;
-  background: url('../img/icon-cart.svg') no-repeat right;
+  margin-top: 5px;
+  fill: $icon-color;
+
+  &:hover {
+    fill: $brand-color--light;
+  }
+
+  &:active {
+    fill: rgba($brand-color--light, 0.3);
+  }
 }

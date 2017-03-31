@@ -126,8 +126,9 @@
   }
 
   @media #{$desktop} {
-    margin-right: 50px;
-    padding-top: 11px;
+    align-self: flex-end;
+    margin-right: 35px;
+    padding-top: 0;
     padding-left: 0;
     order: -1;
     margin-left: 0;
@@ -152,6 +153,7 @@
   }
 
   @media #{$desktop} {
+    //margin-top: 8px;
     width: 149px;
     height: auto;
   }
@@ -181,7 +183,7 @@
       display: flex;
       justify-content: flex-end;
       order: -1;
-      width: 398px;
+      width: 350px;
     }
 
     &--second-menu {
@@ -197,11 +199,71 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       order: -2;
-      width: 398px;
+      width: 380px;
     }
 
     &--second-menu {
       margin-top: 18px;
+    }
+  }
+}
+
+.page-header__item {
+
+  &--search {
+    @media #{$tablet, $desktop} {
+      padding: 32px 0;
+      width: 83px;
+      border-left: 1px solid $border-color--light;
+    }
+  }
+
+  &--cart {
+    @media #{$tablet, $desktop} {
+      padding: 32px 0;
+      padding-left: 82px;
+      width: 182px;
+      border-left: 1px solid $border-color--light;
+    }
+  }
+
+  &--main-menu {
+    @media #{$tablet} {
+      padding-right: 10px;
+      width:155px;
+    }
+
+    @media #{$desktop} {
+      padding: 32px 0;
+    }
+  }
+
+  &--main-menu:nth-child(odd) {
+    @media #{$desktop} {
+      padding-right: 33px;
+      width: 151px;
+     }
+  }
+
+  &--main-menu:nth-child(even) {
+    @media #{$desktop} {
+      padding-left: 33px;
+      width: 158px;
+      border-left: 1px solid $border-color--light;
+    }
+  }
+
+  &--second-menu:nth-child(odd) {
+    @media #{$desktop} {
+      padding-right: 24px;
+      width: 160px;
+     }
+  }
+
+  &--second-menu:nth-child(even) {
+    @media #{$desktop} {
+      padding-left: 33px;
+      width: 158px;
     }
   }
 }
@@ -218,75 +280,17 @@
   color: $text-color;
   border-top: 1px solid $border-color--light;
 
-  @media #{$tablet} {
+  @media #{$tablet, $desktop} {
     padding: 0;
     border: none;
 
     &--search {
-      padding: 32px 0;
-      width: 83px;
-      min-height: 24px;
       font-size: 0;
-      border-left: 1px solid $border-color--light;
     }
-
-    &--cart {
-      padding: 32px 0;
-      padding-left: 82px;
-      width: 182px;
-      border-left: 1px solid $border-color--light;
-    }
-
-    &--main-menu {
-      margin-right: 36px;
-    }
-  }
-
-  @media #{$desktop} {
-    padding: 0;
-    border: none;
-
-    &--search {
-      padding: 32px 0;
-      width: 83px;
-      min-height: 24px;
-      font-size: 0;
-      border-left: 1px solid $border-color--light;
-    }
-
-    &--cart {
-      padding: 32px 0;
-      padding-left: 82px;
-      width: 182px;
-      border-left: 1px solid $border-color--light;
-    }
-
-    &--main-menu {
-      padding: 32px 0;
-      width: 182px;
-    }
-
-    &--second-menu {
-      width: 180px;
-    }
-  }
-}
-
-.page-header__item--main-menu:nth-child(even) .page-header__link--main-menu {
-  @media #{$desktop} {
-    padding-left: 33px;
-    border-left: 1px solid $border-color--light;
-  }
-}
-
-.page-header__item--second-menu:nth-child(even) .page-header__link--second-menu {
-  @media #{$desktop} {
-    padding-left: 33px;
   }
 }
 
 .page-header__link[href] {
-
   @media #{$desktop} {
 
     &:hover {
@@ -332,13 +336,13 @@
   @media #{$tablet, $desktop} {
 
     &--search {
-      top: 36px;
+      top: 5px;
       left: 32px;
     }
 
     &--cart {
-      top: 35px;
-      left: 31px;
+      top: 3px;
+      left: -50px;
     }
   }
 }
@@ -364,13 +368,13 @@
 .page-header__intro {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
-  min-height: 177px;
+  //min-height: 177px;
   border-top: 1px solid $border-color--light;
   background: $background-color;
 
   &--index {
+    justify-content: flex-end;
     height: 488px;
     background: #fafafa url('../img/hero-mobile@1x.jpg') no-repeat 50% -20px;
 
@@ -381,8 +385,8 @@
   }
 
   @media #{$tablet} {
-    margin-top: -46px;
-    min-height: 223px;
+    margin-top: -44px;
+  //  min-height: 223px;
 
     &--index {
       margin-top: -42px;
@@ -399,11 +403,11 @@
   }
 
     @media #{$desktop} {
-      margin-top: -46px;
-      min-height: 252px;
+      margin-top: -42px;
+    //  min-height: 252px;
 
       &--index {
-        margin-top: -46px;
+        margin-top: -40px;
         height: 746px;
         background: #fafafa url('../img/hero-desktop@1x.jpg') no-repeat 50% 100%;
 
@@ -415,10 +419,9 @@
     }
 }
 
-
 .page-header__title {
   @include container();
-  padding: 70px 0;
+  padding: 70px 0 72px 0;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -428,7 +431,6 @@
     padding-top: 70px;
     padding-bottom: 120px;
   }
-
 
   @media #{$tablet} {
     padding-top: 95px;
@@ -449,14 +451,12 @@
     line-height: 57px;
 
     &--index {
-      padding-top: 156px;
-      padding-bottom: 358px;
+      padding-bottom: 360px;
     }
   }
 }
 
 .page-header__promo {
-
 
   @media #{$tablet} {
     @include container();
@@ -467,7 +467,6 @@
     @include container();
     display: flex;
   }
-
 }
 
 .page-header__promo-btn {
@@ -482,7 +481,7 @@
   color: $main-color;
 
   &--interior {
-    background: $brand-color--light;
+    background: $brand-color--light;// url('../img/icon-interior.svg') no-repeat 243px 30px;
   }
 
   &--toys {
@@ -508,7 +507,6 @@
       opacity: 0.3;
     }*/
   }
-
 }
 
 

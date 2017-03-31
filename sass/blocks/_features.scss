@@ -1,5 +1,5 @@
 .features {
-  padding-top: 32px;
+  padding-top: 28px;
   padding-bottom: 25px;
 
   @media #{$tablet} {
@@ -8,7 +8,7 @@
   }
 
   @media #{$desktop} {
-    padding-top: 60px;
+    padding-top: 59px;
     padding-bottom: 60px;
   }
 }
@@ -47,7 +47,7 @@
   @media #{$tablet} {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -5px;
+    margin-top: -7px;
   }
 
   @media #{$desktop} {
@@ -117,6 +117,55 @@
 .features__icon {
   position: absolute;
   top: 30px;
-  left: 6px;
+  left: 0;
   fill: $brand-color--light;
+
+  &--eco {
+    top: 29px;
+    left: 6px;
+  }
+
+  &--like {
+    top: 35px;
+    left: 6px;
+  }
+
+  &--handmade {
+    left: 2px;
+  }
+
+  &--domestic {
+    top: 34px;
+    left: -7px;
+  }
+
+  &--pack {
+    left: 2px;
+  }
+
+  @media #{$tablet} {
+    top: 57px;
+
+    &--like {
+      top: 62px;
+    }
+
+    &--domestic {
+      top: 59px;
+    }
+  }
+
+  @media #{$desktop} {
+    top: 60px;
+
+    &--eco {
+      top: 58px;
+      left: 10px;
+    }
+
+    &--like {
+      top: 62px;
+      left: 8px;
+    }
+  }
 }

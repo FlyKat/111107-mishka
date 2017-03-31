@@ -1,18 +1,19 @@
 .popular-product {
   padding-top: 27px;
-  padding-bottom: 36px;
+  padding-bottom: 42px;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: $text-color--muted;
+  background: url('../img/bg-zigzag-line.svg') repeat-x 50% 100%;
+  background-size: 1150px 7px;
 
   @media #{$tablet} {
     padding-top: 45px;
     padding-bottom: 67px;
     font-size: 17px;
     line-height: 30px;
-    background: url('../img/bg-zigzag-line.svg') repeat-x 0% 100%;
-    background-size: 768px 17px;
+    background-size: 1150px 17px;
   }
 
   @media #{$desktop} {
@@ -20,6 +21,7 @@
     padding-bottom: 95px;
     font-size: 17px;
     line-height: 30px;
+    background-size:  1150px 23px;
   }
 
 }
@@ -110,6 +112,7 @@
   @media #{$desktop} {
     order: -1;
     margin: 0;
+    margin-top: 6px;
     margin-left: 46px;
     width: 75px;
     line-height: 17px;
@@ -128,7 +131,7 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 100px;
+    margin-bottom: 110px;
     margin-left: 175px;
     width: 290px;
   }
@@ -139,24 +142,22 @@
   margin-bottom: 16px;
 
   @media #{$tablet} {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     width: 300px;
   }
 
   @media #{$desktop} {
-    margin-bottom: 41px;
+    margin-bottom: 46px;
   }
 }
 
 .popular-product__spec {
+  width: 260px;
   border-collapse: collapse;
   line-height: 20px;
 
-  @media #{$tablet} {
-    font-size: 15px;
-  }
-
-  @media #{$desktop} {
+  @media #{$tablet, $desktop} {
+    width: 290px;
     font-size: 15px;
   }
 }
@@ -173,6 +174,10 @@
   padding-left: 26px;
   padding-right: 20px;
   border-bottom: 1px solid $border-color--light;
+
+  @media #{$tablet, $desktop} {
+    padding-left: 10px;
+  }
 }
 
 .popular-product__img {
@@ -218,7 +223,7 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
     font-size: 20px;
     line-height: 24px;
   }
