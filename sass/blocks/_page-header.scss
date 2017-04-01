@@ -44,7 +44,9 @@
   height: 14px;
   font-size: 0;
   border: none;
+  background: $main-color;
   cursor: pointer;
+  outline: none;
 
   @media #{$tablet} {
     display: none;
@@ -294,11 +296,19 @@
   @media #{$desktop} {
 
     &:hover {
-      opacity: 0.6;
+      color: rgba($text-color, 0.6);
+    }
+
+    &:hover .page-header__icon {
+      fill: $brand-color--light;
     }
 
     &:active {
-      opacity: 0.3;
+      color: rgba($text-color, 0.3);
+    }
+
+    &:active .page-header__icon {
+      fill: rgba($brand-color--light, 0.3);
     }
   }
 }
@@ -385,15 +395,27 @@
   }
 
   @media #{$tablet} {
+  //  position: relative;
     margin-top: -44px;
   //  min-height: 223px;
+
+    &::after {
+      //position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      display: block;
+      width: 1150px;
+      height: 12px;
+      background: url('../img/bg-zigzag-fill.svg') repeat-x;
+      background-size: 1150px 12px;
+      z-index: 5;
+    }
 
     &--index {
       margin-top: -42px;
       height: 746px;
       background: #fafafa url('../img/hero-desktop@1x.jpg') no-repeat 50% 100%;
-                          //url('../img/bg-zigzag-fill.svg') 0% 100%;
-
 
         @media #{$retina} {
           background: #fafafa url('../img/hero-desktop@2x.jpg') no-repeat 50% 100%;
@@ -405,6 +427,18 @@
     @media #{$desktop} {
       margin-top: -42px;
     //  min-height: 252px;
+
+   &::after {
+      content: "";
+      top: 100%;
+      left: 0;
+      display: block;
+      width: 1150px;
+      height: 34px;
+      background: url('../img/bg-zigzag-fill.svg') repeat-x;
+      background-size: 1150px 34px;
+      z-index: 5;
+    }
 
       &--index {
         margin-top: -40px;
@@ -421,7 +455,7 @@
 
 .page-header__title {
   @include container();
-  padding: 70px 0 72px 0;
+  padding: 70px 0 77px 0;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -470,6 +504,7 @@
 }
 
 .page-header__promo-btn {
+  position: relative;
   display: block;
   //width: 320px;
   margin: 0 auto;
@@ -481,11 +516,41 @@
   color: $main-color;
 
   &--interior {
-    background: $brand-color--light;// url('../img/icon-interior.svg') no-repeat 243px 30px;
+    background: $brand-color--light;
+
+    @media #{$desktop} {
+      &:hover,
+      &:active {
+        background: $brand-color--lighten;
+      }
+
+      &:hover .page-header__promo-icon {
+        fill: rgba($icon-promo-color, 0.7);
+      }
+
+      &:active .page-header__promo-icon {
+        fill: rgba($icon-promo-color, 0.3);
+      }
+    }
   }
 
   &--toys {
     background-color: $brand-color--dark;
+
+    @media #{$desktop} {
+      &:hover,
+      &:active {
+        background: $brand-color--darken;
+      }
+
+      &:hover .page-header__promo-icon {
+        fill: rgba($icon-promo-color, 0.7);
+      }
+
+      &:active .page-header__promo-icon {
+        fill: rgba($icon-promo-color, 0.3);
+      }
+    }
   }
 
   @media #{$tablet} {
@@ -503,14 +568,30 @@
       min-height: 65px;
     }
 
-    /*&:active {
-      opacity: 0.3;
-    }*/
+    &:active .page-header__promo-text {
+      color: rgba($main-color, 0.3);
+    }
   }
 }
 
+.page-header__promo-icon {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  fill: rgba($icon-promo-color, 0.5);
+
+  &--toy {
+    right: 25px;
+  }
+
+  @media #{$tablet, $desktop} {
+    top: 30px;
+    right: 35px;
+  }
+}
 
 .page-header__promo-text {
   display: block;
   width: 130px;
+  color: $main-color;
 }

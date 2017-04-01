@@ -82,28 +82,36 @@
 
 .video-block__play {
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  //transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   width: 100px;
   height: 76px;
   border: none;
   //background:  url('../img/icon-play.svg') no-repeat 50% 50%;
-  //background-size: 100px 76px;
+//background-size: 100px 76px;
+  //background: transparent;
+  fill: $brand-color;
 
   @media #{$desktop} {
 
     &:hover,
     &:focus {
-      width: 120px;
-      height: 91px;
+      //width: 120px;
+      //height: 91px;
+      transform: scale(1.2);
       outline: none
     }
 
     &:active {
-      width: 80px;
-      height: 61px;
-      //opacity: 0.3;
+      //width: 80px;
+      //height: 61px;
+    //  opacity: 0.3;
+     fill: rgba($brand-color, 0.3);
+      transform: scale(0.8);
     }
   }
 }

@@ -1,9 +1,21 @@
-.modal__inner {
-  @include container();
+.modal {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  padding: 35px 30px 45px 30px;
+  width: 260px;
+  background: $main-color;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.1);
+  z-index: 100;
 
   @media #{$tablet, $desktop} {
-    @include modal-container();
+    padding: 35px 108px 45px 108px;
+    width: 350px
   }
+}
 
-
+.modal-show {
+  display: block;
 }

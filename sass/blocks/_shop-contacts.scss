@@ -131,6 +131,7 @@
 }
 
 .shop-contacts__map {
+  position: relative;
   margin-top: 37px;
   margin-left: -30px;
   margin-bottom: 38px;
@@ -169,6 +170,23 @@
       background: $background-color url('../img/map-desktop@2x.jpg') no-repeat center;
       background-size: 525px auto;
     }
+  }
+}
+
+.shop-contacts__map-pin {
+  position: absolute;
+  top: 166px;
+  left: 123px;
+  width: 66px;
+  height: 100px;
+  background: url('../img/icon-map-pin.svg');
+
+  @media #{$tablet} {
+    left: 347px;
+  }
+
+  @media #{$desktop} {
+    left: 237px;
   }
 }
 

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Магазин «Мишка». Вязание на заказ</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
@@ -114,7 +120,7 @@
         <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
       <form class="form  page-main__form" action="https://echo.htmlacademy.ru/" method="post">
-        <section class="form__item">
+        <section class="form__item form__item--type">
           <div class="form__inner">
             <h2 class="form__title">Тип</h2>
             <div class="form__group">
@@ -129,7 +135,7 @@
             </div>
           </div>
         </section>
-        <section class="form__item">
+        <section class="form__item form__item--color">
           <div class="form__inner">
             <h2 class="form__title">Цвет</h2>
             <div class="form__group">
@@ -160,7 +166,7 @@
             </div>
           </div>
         </section>
-        <section class="form__item">
+        <section class="form__item form__item--user">
           <div class="form__inner">
             <h2 class="form__title">ФИО</h2>
             <div class="form__group">

@@ -1,5 +1,17 @@
 .form__item {
 
+  &--type {
+    margin-bottom: 33px;
+  }
+
+  &--color {
+    margin-bottom: 30px;
+  }
+
+  &--user {
+    margin-bottom: 30px;
+  }
+
   @media #{$tablet} {
     &:nth-child(even) {
       background: $background-color;
@@ -30,6 +42,7 @@
 }
 
 .form__title {
+  position: relative;
   margin: 0;
   margin-bottom: 25px;
   font-size: 17px;
@@ -140,8 +153,27 @@
   border-color: rgba($border-color--dark, 0.3);
 }
 
+.form__radio-input +.form__radio-label:active::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: $brand-color;
+  border-radius: 50%;
+
+  @media #{$tablet, $desktop} {
+    top: 15px;
+    left: 15px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
 .form__checkbox {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   @media #{$tablet} {
     margin-bottom: 24px;
@@ -204,8 +236,8 @@
 .form__checkbox-input:checked + .form__checkbox-label::after {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 7px;
+  top: 10px;
+  left: 8px;
   display: block;
   width: 22px;
   height: 16px;
@@ -229,9 +261,34 @@
   border-color: rgba($border-color--dark, 0.3);
 }
 
+.form__checkbox-input + .form__checkbox-label:active::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  display: block;
+  width: 22px;
+  height: 16px;
+  background: url("../img/icon-tick.svg") no-repeat;
+  background-size: 22px 16px;
+
+  @media #{$tablet, $desktop} {
+    top: 15px;
+    left: 15px;
+    width: 33px;
+    height: 22px;
+    background-size: 33px 22px;
+  }
+}
+
 .form__field {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
+  &--connect {
+    margin-bottom: 30px;
+  }
+
 
   @media #{$tablet} {
     display: flex;
@@ -287,7 +344,6 @@
 }
 
 .form__field-input {
-  margin-top: 3px;
   padding-right: 40px;
   width: 260px;
   min-height: 48px;
@@ -295,11 +351,23 @@
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
-  color: rgba($text-color--muted, 0.3);
+  color: $text-color--muted;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid $border-color--darken;
   outline: none;
+
+  ::placeholder {
+    color: rgba($text-color--muted, 0.3);
+  }
+
+  &--tel {
+    margin-top: 5px;
+  }
+
+  &--email {
+    margin-top: 5px;
+  }
 
   &--textarea {
     margin-top: 20px;
@@ -356,7 +424,6 @@
     }
 
     &:focus {
-      color: $text-color--muted;
       border-color: $brand-color--darken;
 
       & ~ .form__field-icon {
@@ -372,8 +439,8 @@
   fill: $icon-color;
 
   &--phone {
-    bottom: 16px;
-    right: 6px;
+    bottom: 25px;
+    right: 8px;
 
     @media #{$tablet} {
     right: 25px;
@@ -385,8 +452,8 @@
   }
 
   &--email {
-    bottom: 7px;
-    right: 2px;
+    bottom: 18px;
+    right: 5px;
 
     @media #{$tablet} {
     right: 20px;
@@ -400,6 +467,7 @@
 }
 
 .form__text {
+  margin-top: -20px;
   font-size: 14px;
   line-height: 16px;
 
