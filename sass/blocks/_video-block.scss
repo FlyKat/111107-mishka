@@ -82,41 +82,26 @@
 
 .video-block__play {
   position: absolute;
-  //transform: translate(-50%, -50%);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   width: 100px;
   height: 76px;
   border: none;
-  //background:  url('../img/icon-play.svg') no-repeat 50% 50%;
-//background-size: 100px 76px;
-  //background: transparent;
-  fill: $brand-color;
+  background:  url('../img/icon-play.svg') no-repeat 50% 50%;
+  //background-size: 100px 76px;
 
-  @media #{$desktop} {
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+    outline: none
+  }
 
-    &:hover,
-    &:focus {
-      //width: 120px;
-      //height: 91px;
-      transform: scale(1.2);
-      outline: none
-    }
-
-    &:active {
-      //width: 80px;
-      //height: 61px;
-    //  opacity: 0.3;
-     fill: rgba($brand-color, 0.3);
-      transform: scale(0.8);
-    }
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
   }
 }
-
-
 
 .video-block__info {
   padding: 20px 40px 20px 32px;
