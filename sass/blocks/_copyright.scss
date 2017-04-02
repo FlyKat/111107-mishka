@@ -1,11 +1,12 @@
 .copyright {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .copyright__link {
-  margin-right: 30px;
+  display: block;
+  margin-right: 10px;
   width: 127px;
   font-size: 19px;
   font-weight: 700;
@@ -15,9 +16,14 @@
 }
 
 .copyright__logo {
-  @include img-replacement;
-  display: block;
-  width: 27px;
-  height: 34px;
-  background: url('../img/logo-htmlacademy.svg') no-repeat center;
+  margin-top: 12px;
+  text-decoration: none;
+  fill: $brand-color--darken;
+
+  @media #{$desktop} {
+
+    &:active {
+      fill: rgba($brand-color--darken, 0.3);
+    }
+  }
 }

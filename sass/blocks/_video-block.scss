@@ -3,60 +3,136 @@
   font-weight: 400;
   line-height: 24px;
   color: $text-color--muted;
+  border: 1px solid $border-color--light;
+
 
   @media #{$tablet} {
     display: flex;
     flex-direction: column;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   @media #{$desktop} {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    position: relative;
+    padding-left: 684px;
     height: 455px;
+    font-size: 15px;
+    line-height: 30px;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba($border-color--darken, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba($border-color--darken, 0.1);
+    }
   }
 }
 
 .video-block__title {
-  padding: 22px 0 24px 87px;
+  margin: 0;
+  padding: 25px 32px 24px 87px;
   font-size: 17px;
   font-weight: 700;
   color: $text-color;
-  border: 1px solid $border-color--light;
-  border-bottom: none;
+  background: url('../img/icon-video.svg') no-repeat 33px 30px;
+  background-size: 32px 32px;
+
+  @media #{$tablet} {
+    padding: 38px 41px 32px 105px;
+    width: 520px;
+    font-size: 20px;
+    line-height: 24px;
+    background-position: 40px 30px;
+  }
 
   @media #{$desktop} {
-    outline: 1px solid red;
-    padding: 0;
-    width: 360px;
+    padding: 95px 120px 0 77px;
+    margin-bottom: 32px;
+    width: 170px;
+    font-size: 20px;
+    line-height: 24px;
+    background-position: 80px 40px;
   }
 
 }
 
 .video-block__video {
+  position: relative;
+//  background: $background-color url('../img/video-mobile@1x.jpg');
 
   @media #{$tablet} {
-    outline: 1px solid red;
     width: 668px;
-    height: 458px;
+    height: 455px;
     order: -1;
+  //background: $background-color url('../img/video-tablet@1x.jpg');
   }
 
   @media #{$desktop} {
-    outline: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 682px;
     height: 455px;
     order: -1;
+  //  background: $background-color url('../img/video-desktop@1x.jpg');
+  }
+}
+
+.video-block__play {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 76px;
+  border: none;
+  background:  url('../img/icon-play.svg') no-repeat 50% 50%;
+  //background-size: 100px 76px;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+    outline: none
   }
 
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.video-block__info {
+  padding: 20px 40px 20px 32px;
+
+  @media #{$tablet} {
+    padding: 0 41px;
+  }
+
+  @media #{$desktop} {
+    padding: 0 55px 0 77px;
+
+  }
 }
 
 .video-block__desc {
-  margin: 20px 0 27px 32px;
-  width: 185px;
+  margin: 0;
+
 }
 
 .video-block__btn {
-  margin: 32px;
-  margin-top: 27px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+
+  @media #{$tablet} {
+    margin-top: 35px;
+    margin-bottom: 45px;
+    width: 585px;
+  }
+
+  @media #{$desktop} {
+    margin-top: 45px;
+    width: 230px;
+  }
 }

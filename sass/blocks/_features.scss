@@ -1,18 +1,37 @@
+.features {
+  padding-top: 28px;
+  padding-bottom: 25px;
+
+  @media #{$tablet} {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 59px;
+    padding-bottom: 60px;
+  }
+}
+
 .features__inner {
   @include container();
 }
 
 .features__title {
+  margin: 0;
+  margin-bottom: 3px;
   font-size: 25px;
   line-height: 30px;
   color: $text-color;
 
   @media #{$tablet} {
+    margin: 0;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media #{$desktop} {
+    margin: 0;
     padding-left: 175px;
     font-size: 53px;
     line-height: 57px;
@@ -28,25 +47,28 @@
   @media #{$tablet} {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -7px;
   }
 
   @media #{$desktop} {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -10px;
     padding-left: 175px;
   }
 
 }
 
 .features__item {
-  outline: 1px solid green;
-  padding-top: 85px;
+  position: relative;
+  padding-top: 83px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   color: $text-color;
 
   @media #{$tablet} {
+    padding-top: 110px;
     padding-right: 20px;
     width: 314px;
     font-size: 20px;
@@ -54,6 +76,7 @@
   }
 
   @media #{$desktop} {
+    padding-top: 112px;
     padding-right: 20px;
     width: 330px;
     font-size: 20px;
@@ -88,7 +111,61 @@
     &--pack {
       order: 6;
     }
+  }
+}
 
+.features__icon {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  fill: $brand-color--light;
+
+  &--eco {
+    top: 29px;
+    left: 6px;
   }
 
+  &--like {
+    top: 35px;
+    left: 6px;
+  }
+
+  &--handmade {
+    left: 2px;
+  }
+
+  &--domestic {
+    top: 34px;
+    left: -7px;
+  }
+
+  &--pack {
+    left: 2px;
+  }
+
+  @media #{$tablet} {
+    top: 57px;
+
+    &--like {
+      top: 62px;
+    }
+
+    &--domestic {
+      top: 59px;
+    }
+  }
+
+  @media #{$desktop} {
+    top: 60px;
+
+    &--eco {
+      top: 58px;
+      left: 10px;
+    }
+
+    &--like {
+      top: 62px;
+      left: 8px;
+    }
+  }
 }

@@ -1,15 +1,23 @@
-.page-main {
-  outline: 1px dashed red;
-  margin-top: 30px;
-}
+//.page-main {
+//  margin-top: 25px;
+//}
 
 .page-main__inner {
   @include container();
 }
 
+
 .page-main__products {
   @include container();
   margin-top: 30px;
+
+  @media #{$tablet} {
+    margin-top: 81px;
+  }
+
+  @media #{$desktop} {
+    margin-top: 130px;
+  }
 }
 
 .page-main__video-block {
@@ -21,17 +29,19 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 105px;
+    margin-bottom: 100px;
   }
 
 }
 
 .page-main__text {
-  margin-top: 26px;
+  margin-top: 20px;
   margin-bottom: 26px;
   font-size: 13px;
 
   @media #{$tablet} {
+    margin-top: 72px;
+    margin-bottom: 58px;
     font-size: 17px;
   }
 

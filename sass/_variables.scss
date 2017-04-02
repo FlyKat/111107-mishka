@@ -6,12 +6,17 @@ $border-color--dark: #444;
 $border-color--darken: #000;
 $text-color: #000;
 $text-color--muted: #444;
+$nav-btn-color: #221f1f;
 $brand-color--lighten: #59d5bc;
 $brand-color--light: #63d1bb;
 $brand-color: #62d1ba;
 $brand-color--dark: #56c3b2;
 $brand-color--darken: #46c1ae;
+$icon-color: rgba(68, 68, 68, 0.2);
+$icon-promo-color: #149080;
 
 $mobile: 'only screen and (max-width: 767px)';
 $tablet: 'only screen and (min-width: 768px) and (max-width: 1149px)';
 $desktop: 'only screen and (min-width: 1150px)';
+
+$retina: '(min-resolution: 144dpi), (min-resolution: 1.5ppx)';

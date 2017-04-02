@@ -1,17 +1,14 @@
 @mixin container() {
-  outline: 1px dashed green;
   margin: 0 auto;
   padding: 0 30px;
   width: 260px;
 
   @media #{$tablet} {
-    outline: 1px dashed blue;
     padding: 0 50px;
     width: 668px;
   }
 
   @media #{$desktop} {
-    outline: 1px dashed orange;
     padding: 0 50px;
     width: 1050px;
   }

@@ -1,16 +1,24 @@
 .feedback {
-  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
   color: $text-color;
+  background: url('../img/bg-zigzag-line.svg') repeat-x 0% 100%;
+  background-size: auto 7px;
 
   @media #{$tablet} {
+    padding: 0;
+    padding-bottom: 80px;
     font-size: 17px;
+    background-size: auto 17px;
   }
 
-  @media #{desktop} {
+  @media #{$desktop} {
+    padding-bottom: 95px;
     font-size: 17px;
+    background-size:  auto 23px;
   }
 }
 
@@ -18,37 +26,60 @@
   @include container();
 
   @media #{$tablet} {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 83px;
+    padding-bottom: 20px;
+    background: url('../img/review@1x.jpg') no-repeat left;
+
+    @media #{$retina} {
+      background: url('../img/review@2x.jpg') no-repeat left;
+      background-size: 350px auto;
+    }
+
   }
 
   @media #{$desktop} {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    background: url('../img/review@1x.jpg') no-repeat left;
+    background-position: 50px;
+
+
+    @media #{$retina} {
+      background: url('../img/review@2x.jpg') no-repeat left;
+      background-size: 350px auto;
+    }
+
   }
 }
 
-.feedback__inner > * {
-  outline: 1px solid green;
-}
-
 .feedback__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 25px;
   font-weight: 700;
   color: $text-color;
 
   @media #{$tablet} {
     order: -2;
+    margin-bottom: 50px;
     font-size: 43px;
-    line-height: 50px;
+    line-height: 45px;
   }
 
   @media #{$desktop} {
     order: -2;
+    margin-bottom: 48px;
+    margin-left: 175px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -56,9 +87,30 @@
 
 .feedback__item {
   margin: 0;
+  margin-bottom: 30px;
+
+  @media #{$desktop} {
+    margin-left: 175px;
+    margin-right: 100px;
+  }
+}
+
+.feedback__text {
+  margin: 0;
+  margin-bottom: 26px;
+
+  @media #{$tablet} {
+    margin-bottom: 60px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 40px;
+  }
 }
 
 .feedback__author-name {
+  display: block;
+  margin-bottom: 3px;
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
@@ -67,6 +119,7 @@
 }
 
 .feedback__author-email {
+  display: block;
   font-size: 17px;
   font-style: normal;
 }
@@ -76,13 +129,20 @@
   margin-bottom: 38px;
 
   @media #{$tablet} {
+    position: absolute;
+    bottom: 54px;
+    right: 54px;
+    margin: 0;
     width: 167px;
   }
 
   @media #{$desktop} {
+    position: absolute;
+    bottom: 95px;
+    right: 50px;
+    margin: 0;
     width: 175px;
   }
-
 }
 
 .feedback__arrow {
@@ -96,11 +156,31 @@
   &--next {
     background: url('../img/icon-right-arrow.svg') no-repeat center;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media #{$tablet, $desktop} {
+    border: none;
+  }
+
 }
 
 .feedback__btn {
 
-  @media #{$tablet, $desktop} {
+  @media #{$tablet} {
     order: -1;
+    width: 177px;
+  }
+
+  @media #{$desktop} {
+    order: -1;
+    margin-top: 10px;
+    width: 177px;
   }
 }
