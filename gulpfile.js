@@ -89,9 +89,9 @@ gulp.task("copy", function() {
     "img/*",
     "js/*",
     "*.html"
-  ]), {
+  ], {
     base: "."
-  }
+  })
   .pipe(gulp.dest("build"));
 });
 
