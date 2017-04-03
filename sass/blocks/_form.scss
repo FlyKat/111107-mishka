@@ -324,14 +324,13 @@
     }
   }
 
-   &--email {
-     @media #{$mobile}{
-       &::after {
-         width: 180px;
-       }
+    &--email {
+      @media #{$mobile}{
+        &::after {
+          width: 180px;
+        }
+      }
     }
-  }
-
 
   @media #{$tablet} {
     display: flex;
