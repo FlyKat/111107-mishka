@@ -245,21 +245,19 @@
     </footer>
     <!--end page-footer-footer-->
     <div class="modal">
-      <div class="modal__inner">
-        <form class="form-select  modal__form" action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="form-select__title">Добавить в&nbsp;корзину</h2>
-          <p class="form-select__text">Выберите размер:</p>
-          <div class="form-select__group">
-            <input class="form-select__checkbox" type="checkbox" id="size-s" value="S" name="size-s" checked>
-            <label class="form-select__label" for="size-s">S</label>
-            <input class="form-select__checkbox" type="checkbox" id="size-m" value="M" name="size-m">
-            <label class="form-select__label" for="size-m">M</label>
-            <input class="form-select__checkbox" type="checkbox" id="size-l" value="L" name="size-l">
-            <label class="form-select__label" for="size-l">L</label>
-          </div>
-          <button class="btn btn--add" type="submit">Добавить</button>
-        </form>
-      </div>
+      <form class="form-select" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="form-select__title">Добавить в&nbsp;корзину</h2>
+        <p class="form-select__text">Выберите размер:</p>
+        <div class="form-select__group">
+          <input class="form-select__checkbox" type="checkbox" id="size-s" value="S" name="size-s" checked>
+          <label class="form-select__label" for="size-s">S</label>
+          <input class="form-select__checkbox" type="checkbox" id="size-m" value="M" name="size-m">
+          <label class="form-select__label" for="size-m">M</label>
+          <input class="form-select__checkbox" type="checkbox" id="size-l" value="L" name="size-l">
+          <label class="form-select__label" for="size-l">L</label>
+        </div>
+        <button class="btn btn--add  form-select__btn" type="submit">Добавить</button>
+      </form>
     </div>
     <!--end modal-->
     <script src="js/script.js"></script>
