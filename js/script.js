@@ -21,6 +21,7 @@ navBtn.addEventListener('click', function() {
 var cart = document.querySelectorAll('.product__cart');
 var order = document.querySelector('.popular-product__btn');
 var popup = document.querySelector('.modal');
+var overlay = document.querySelector('.overlay');
 var close = document.querySelector('.form-select__btn');
 
 if (cart !== null) {
@@ -28,6 +29,7 @@ if (cart !== null) {
     cart[i].addEventListener('click', function (event) {
       event.preventDefault();
       popup.classList.add('modal--show');
+      overlay.classList.add('overlay--show');
     });
   }
 }
@@ -36,12 +38,14 @@ if (order !== null) {
   order.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.add('modal--show');
+    overlay.classList.add('overlay--show');
   });
 }
 
 close.addEventListener('click', function(event) {
 	event.preventDefault();
 	popup.classList.remove('modal--show');
+  popup.classList.remove('overlay--show');
 });
 
 
@@ -49,6 +53,7 @@ window.addEventListener('keydown', function(event) {
 	if (event.keyCode == 27) {
 		if (popup.classList.contains('modal--show')) {
 			popup.classList.remove('modal--show');
+      popup.classList.remove('overlay--show');
 		}
 	}
 });
@@ -78,7 +83,7 @@ function init() {
 			iconLayout: 'default#image',
 			iconImageHref: 'img/icon-map-pin.svg',
 			iconImageSize: [66, 100],
-			iconImageOffset: [-66, -100] //todo
+			iconImageOffset: [-50, -95]
 		});
 
 	myMap.geoObjects.add(myPlacemark);
