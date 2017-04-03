@@ -51,11 +51,11 @@ close.addEventListener('click', function(event) {
 
 window.addEventListener('keydown', function(event) {
   if (event.keyCode == 27) {
-	  if (popup.classList.contains('modal--show')) {
+    if (popup.classList.contains('modal--show')) {
       popup.classList.remove('modal--show');
       overlay.classList.remove('overlay--show');
-     }
-   }
+      }
+    }
 });
 
 //  interactive map
@@ -75,12 +75,12 @@ function init() {
     position: {
       top: 15,
       left: 15
-     }
+    }
   });
 
   var myPlacemark = new ymaps.Placemark(
-	  [59.93863106417265,30.3230545], {}, {
-	    iconLayout: 'default#image',
+    [59.93863106417265,30.3230545], {}, {
+      iconLayout:  'default#image',
       iconImageHref: 'img/icon-map-pin.svg',
       iconImageSize: [66, 100],
       iconImageOffset: [-50, -95]
