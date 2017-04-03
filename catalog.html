@@ -10,9 +10,9 @@
     <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
-   </script>
-   <script src="js/picturefill.min.js" async></script>
-   <script src="js/posterfill.js"></script>
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/posterfill.min.js"></script>
   </head>
   <body>
     <svg style="display: none;">
@@ -190,9 +190,9 @@
               <source src="#" type="#">
               <div data-poster="img/video-mobile@1x.jpg"></div>
               <div data-poster="img/video-mobile@2x.jpg" data-media="(min-device-pixel-ratio: 2.0)"></div>
-		          <div data-poster="img/video-tablet@1x.jpg" data-media="(min-width: 768px)"></div>
+              <div data-poster="img/video-tablet@1x.jpg" data-media="(min-width: 768px)"></div>
               <div data-poster="img/video-tablet@2x.jpg" data-media="(min-width: 768px) and (min-device-pixel-ratio: 2.0)"></div>
-		          <div data-poster="img/video-desktop@1x.jpg" data-media="(min-width: 1150px)"></div>
+              <div data-poster="img/video-desktop@1x.jpg" data-media="(min-width: 1150px)"></div>
               <div data-poster="img/video-desktop@2x.jpg" data-media="(min-width: 1150px) and (min-device-pixel-ratio: 2.0)"></div>
             </video>
             <button class="video-block__play"></button>
@@ -245,22 +245,21 @@
     </footer>
     <!--end page-footer-footer-->
     <div class="modal">
-      <div class="modal__inner">
-        <form class="form-select  modal__form" action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="form-select__title">Добавить в&nbsp;корзину</h2>
-          <p class="form-select__text">Выберите размер:</p>
-          <div class="form-select__group">
-            <input class="form-select__checkbox" type="checkbox" id="size-s" value="S" name="size-s" checked>
-            <label class="form-select__label" for="size-s">S</label>
-            <input class="form-select__checkbox" type="checkbox" id="size-m" value="M" name="size-m">
-            <label class="form-select__label" for="size-m">M</label>
-            <input class="form-select__checkbox" type="checkbox" id="size-l" value="L" name="size-l">
-            <label class="form-select__label" for="size-l">L</label>
-          </div>
-          <button class="btn btn--add" type="submit">Добавить</button>
-        </form>
-      </div>
+      <form class="form-select" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="form-select__title">Добавить в&nbsp;корзину</h2>
+        <p class="form-select__text">Выберите размер:</p>
+        <div class="form-select__group">
+          <input class="form-select__checkbox" type="checkbox" id="size-s" value="S" name="size-s" checked>
+          <label class="form-select__label" for="size-s">S</label>
+          <input class="form-select__checkbox" type="checkbox" id="size-m" value="M" name="size-m">
+          <label class="form-select__label" for="size-m">M</label>
+          <input class="form-select__checkbox" type="checkbox" id="size-l" value="L" name="size-l">
+          <label class="form-select__label" for="size-l">L</label>
+        </div>
+        <button class="btn btn--add  form-select__btn" type="submit">Добавить</button>
+      </form>
     </div>
+    <<div class="overlay"></div>
     <!--end modal-->
     <script src="js/script.js"></script>
   </body>

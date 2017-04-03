@@ -5,15 +5,31 @@
     margin-bottom: 32px;
   }
 
+  @media #{$tablet, $desktop} {
+    margin-bottom: 0;
+  }
+
   @media #{$tablet} {
+    padding: 50px 0 28px 0;
+
     &:nth-child(even) {
       background: $background-color;
+    }
+
+    &--connect {
+      padding: 45px 0 30px 0;
     }
   }
 
   @media #{$desktop} {
+    padding: 50px 0 28px 0;
+
     &:nth-child(even) {
       background: $background-color;
+    }
+
+    &--connect {
+      padding: 45px 0 30px 0;
     }
   }
 }
@@ -43,6 +59,18 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $brand-color--light;
+
+  @media #{$mobile} {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 198px;
+      height: 1px;
+      background: $brand-color;
+    }
+  }
 
   @media #{$tablet} {
     width: 167px;
@@ -171,7 +199,7 @@
   margin-bottom: 21px;
 
   @media #{$tablet} {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     width: 262px;
 
     &:nth-child(even) {
@@ -180,8 +208,8 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 24px;
-    width: 260px;
+    margin-bottom: 25px;
+    width: 263px;
   }
 }
 
@@ -241,7 +269,7 @@
 
   @media #{$tablet, $desktop} {
     top: 15px;
-    left: 15px;
+    left: 12px;
     width: 33px;
     height: 22px;
     background-size: 33px 22px;
@@ -269,7 +297,7 @@
 
   @media #{$tablet, $desktop} {
     top: 15px;
-    left: 15px;
+    left: 12px;
     width: 33px;
     height: 22px;
     background-size: 33px 22px;
@@ -282,15 +310,36 @@
 
   &--connect {
     margin-bottom: 30px;
+
+    @media #{$mobile} {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 198px;
+        height: 1px;
+        background: $brand-color;
+      }
+    }
   }
 
+    &--email {
+      @media #{$mobile}{
+        &::after {
+          width: 180px;
+        }
+      }
+    }
 
   @media #{$tablet} {
     display: flex;
     align-items: baseline;
+    margin-bottom: 25px;
     width: 501px;
 
     &--connect {
+      margin-bottom: 20px;
       width: 668px;
     }
   }
@@ -298,9 +347,11 @@
   @media #{$desktop} {
     display: flex;
     align-items: baseline;
+    margin-bottom: 25px;
     width: 700px;
 
     &--connect {
+      margin-bottom: 20px;
       width: 875px;
     }
   }
@@ -320,23 +371,30 @@
 
   @media #{$tablet} {
     margin-right: 25px;
+    font-size: 19px;
 
     &--connect {
       margin: 0;
       width: 167px;
+      font-size: 17px;
+      line-height: 16px;
     }
   }
 
   @media #{$desktop} {
     margin-right: 25px;
+    font-size: 19px;
+
 
     &--connect {
       margin: 0;
       margin-left: 61px;
       width: 114px;
+      font-size: 17px;
     }
   }
 }
+
 
 .form__field-input {
   padding-right: 40px;
@@ -371,9 +429,26 @@
     border: 2px solid $border-color--darken;
   }
 
+  &:hover {
+    border-color: $brand-color--darken;
+
+    & ~ .form__field-icon {
+      fill: $brand-color--darken;
+    }
+  }
+
+  &:focus {
+    border-color: $brand-color--darken;
+
+    & ~ .form__field-icon {
+      fill: $brand-color--darken;
+    }
+  }
+
   @media #{$tablet} {
     padding-left: 17px;
     flex-grow: 1;
+    min-height: 50px;
     font-size: 19px;
 
     &--tel {
@@ -387,13 +462,16 @@
     }
 
     &--textarea {
+      margin-top: 0;
       width: 501px;
+      min-height: 144px;
     }
   }
 
   @media #{$desktop} {
     padding-left: 17px;
     flex-grow: 1;
+    min-height: 51px;
     font-size: 19px;
 
     &--tel {
@@ -410,20 +488,10 @@
       width: 700px;
     }
 
-    &:hover {
-      border-color: $brand-color--darken;
-
-      & ~ .form__field-icon {
-        fill: $brand-color--darken;
-      }
-    }
-
-    &:focus {
-      border-color: $brand-color--darken;
-
-      & ~ .form__field-icon {
-        fill: $brand-color--darken;
-      }
+    &--textarea {
+      margin-top: 0;
+      width: 501px;
+      min-height: 142px;
     }
   }
 }
@@ -475,6 +543,7 @@
 
   @media #{$desktop} {
     margin-left: auto;
+    margin-right: 175px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -485,10 +554,15 @@
 
   @media #{$tablet} {
     order: -1;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 232px;
   }
 
   @media #{$desktop} {
+    margin-bottom: 50px;
     margin-left: 175px;
     order: -1;
+    width: 232px;
   }
 }

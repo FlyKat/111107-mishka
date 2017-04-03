@@ -8,15 +8,11 @@
   margin-right: 40px;
   text-decoration: none;
 
-  @media #{$desktop} {
+  &:hover {
+    fill: $brand-color--darken;
+  }
 
-    &:hover,
-    &:focus {
-      fill: $brand-color--darken;
-    }
-
-    &:active {
-      fill: rgba($brand-color--darken, 0.3);
-    }
+  &:active {
+    fill: rgba($brand-color--darken, 0.3);
   }
 }

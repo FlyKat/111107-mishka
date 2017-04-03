@@ -10,7 +10,7 @@
 
   @media #{$tablet} {
     padding: 0;
-    padding-bottom: 80px;
+    padding-bottom: 75px;
     font-size: 17px;
     background-size: auto 17px;
   }
@@ -31,7 +31,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 83px;
+    padding-top: 85px;
     padding-bottom: 20px;
     background: url('../img/review@1x.jpg') no-repeat left;
 
@@ -39,7 +39,6 @@
       background: url('../img/review@2x.jpg') no-repeat left;
       background-size: 350px auto;
     }
-
   }
 
   @media #{$desktop} {
@@ -53,12 +52,10 @@
     background: url('../img/review@1x.jpg') no-repeat left;
     background-position: 50px;
 
-
     @media #{$retina} {
       background: url('../img/review@2x.jpg') no-repeat left;
       background-size: 350px auto;
     }
-
   }
 }
 
@@ -71,7 +68,7 @@
 
   @media #{$tablet} {
     order: -2;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     font-size: 43px;
     line-height: 45px;
   }
@@ -129,18 +126,14 @@
   margin-bottom: 38px;
 
   @media #{$tablet} {
-    position: absolute;
-    bottom: 54px;
-    right: 54px;
-    margin: 0;
-    width: 167px;
+    margin-top: -83px;
+    margin-left: 495px;
+    width: 172px;
   }
 
   @media #{$desktop} {
-    position: absolute;
-    bottom: 95px;
-    right: 50px;
-    margin: 0;
+    margin-top: -85px;
+    margin-left: 875px;
     width: 175px;
   }
 }
@@ -168,7 +161,6 @@
   @media #{$tablet, $desktop} {
     border: none;
   }
-
 }
 
 .feedback__btn {
