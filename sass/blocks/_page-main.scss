@@ -1,11 +1,6 @@
-//.page-main {
-//  margin-top: 25px;
-//}
-
 .page-main__inner {
   @include container();
 }
-
 
 .page-main__products {
   @include container();
@@ -31,7 +26,6 @@
   @media #{$desktop} {
     margin-bottom: 100px;
   }
-
 }
 
 .page-main__text {
@@ -41,17 +35,15 @@
 
   @media #{$tablet} {
     margin-top: 72px;
-    margin-bottom: 58px;
+    margin-bottom: 8px;
     font-size: 17px;
   }
 
   @media #{$desktop} {
+    margin-top: 125px;
+    margin-bottom: 8px;
     margin-left: 175px;
+    width: 700px;
     font-size: 17px;
   }
-
-}
-
-.page-main__form {
-  margin-bottom: 55px;
 }

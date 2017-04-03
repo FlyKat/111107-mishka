@@ -20,10 +20,7 @@
   text-decoration: none;
   fill: $brand-color--darken;
 
-  @media #{$desktop} {
-
-    &:active {
-      fill: rgba($brand-color--darken, 0.3);
-    }
+  &:active {
+    fill: rgba($brand-color--darken, 0.3);
   }
 }

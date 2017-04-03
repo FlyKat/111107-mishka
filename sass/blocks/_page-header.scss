@@ -152,12 +152,13 @@
   height: auto;
 
   @media #{$tablet} {
+    margin-top: 0;
     width: 113px;
     height: auto;
   }
 
   @media #{$desktop} {
-    //margin-top: 8px;
+    margin-top: 8px;
     width: 149px;
     height: auto;
   }
@@ -179,7 +180,7 @@
     flex-wrap: wrap;
 
     &--main-menu {
-      margin-top: 20px;
+      margin-top: 18px;
       width: 340px;
     }
 
@@ -295,7 +296,6 @@
 }
 
 .page-header__link[href] {
-  @media #{$desktop} {
 
     &:hover {
       color: rgba($text-color, 0.6);
@@ -312,7 +312,6 @@
     &:active .page-header__icon {
       fill: rgba($brand-color--light, 0.3);
     }
-  }
 }
 
 .page-header__list--main-menu  {
@@ -368,12 +367,11 @@
   }
 
   @media #{$tablet} {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   @media #{$desktop} {
-    margin-top:  18px;
-
+    margin-top: 18px;
   }
 }
 
@@ -381,7 +379,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //min-height: 177px;
   border-top: 1px solid $border-color--light;
   background: $background-color;
 
@@ -401,19 +398,17 @@
     position: relative;
     z-index: 1;
     margin-top: -44px;
-    //min-height: 223px;
 
     &::after {
       content: "";
       position: absolute;
       bottom: 0;
       left: 0;
-      //transform: translateX(-50%);
       display: block;
       width: 100%;
-      height: 12px;
-      background: url('../img/bg-zigzag-fill.svg');
-      background-size: auto 12px;
+      height: 14px;
+      background: url('../img/bg-zigzag-fill.svg') repeat-x 50% 0;
+      background-size: auto 23px;
       z-index: 5;
     }
 
@@ -432,25 +427,22 @@
     @media #{$desktop} {
       position: relative;
       z-index: 1;
-      margin-top: -42px;
-    //  min-height: 252px;
+      margin-top: -44px;
 
       &::after {
         content: "";
         position: absolute;
         bottom: 0;
         left: 0;
-      //transform: translateX(-50%);
         display: block;
         width: 100%;
         height: 17px;
-        background: url('../img/bg-zigzag-fill.svg');
-        //background-size: auto 17px;
+        background: url('../img/bg-zigzag-fill.svg') repeat-x 50% 0;
         z-index: 5;
       }
 
       &--index {
-        margin-top: -40px;
+        margin-top: -42px;
         height: 746px;
         background: #fafafa url('../img/hero-desktop@1x.jpg') no-repeat 50% 100%;
 
@@ -522,62 +514,58 @@
   text-decoration: none;
   color: $main-color;
 
+  &:hover {
+    margin-top: -5px;
+    min-height: 65px;
+  }
+
+  &:active .page-header__promo-text {
+    color: rgba($main-color, 0.3);
+  }
+
   &--interior {
     background: $brand-color--light;
 
-    @media #{$desktop} {
-      &:hover,
-      &:active {
-        background: $brand-color--lighten;
-      }
+    &:hover,
+    &:active {
+      background: $brand-color--lighten;
+    }
 
-      &:hover .page-header__promo-icon {
-        fill: rgba($icon-promo-color, 0.7);
-      }
+    &:hover .page-header__promo-icon {
+      fill: rgba($icon-promo-color, 0.7);
+    }
 
-      &:active .page-header__promo-icon {
-        fill: rgba($icon-promo-color, 0.3);
-      }
+    &:active .page-header__promo-icon {
+      fill: rgba($icon-promo-color, 0.3);
     }
   }
 
   &--toys {
     background-color: $brand-color--dark;
 
-    @media #{$desktop} {
-      &:hover,
-      &:active {
-        background: $brand-color--darken;
-      }
+    &:hover,
+    &:active {
+      background: $brand-color--darken;
+    }
 
-      &:hover .page-header__promo-icon {
-        fill: rgba($icon-promo-color, 0.7);
-      }
+    &:hover .page-header__promo-icon {
+      fill: rgba($icon-promo-color, 0.7);
+    }
 
-      &:active .page-header__promo-icon {
-        fill: rgba($icon-promo-color, 0.3);
-      }
+    &:active .page-header__promo-icon {
+      fill: rgba($icon-promo-color, 0.3);
     }
   }
 
   @media #{$tablet} {
     width: 334px;
-    padding: 30px  115px 30px 38px;
+    padding: 28px  118px 32px 35px;
   }
 
   @media #{$desktop} {
     padding: 28px 115px 32px 38px;
     width: 525px;
     min-height: 60px;
-
-    &:hover {
-      margin-top: -5px;
-      min-height: 65px;
-    }
-
-    &:active .page-header__promo-text {
-      color: rgba($main-color, 0.3);
-    }
   }
 }
 
