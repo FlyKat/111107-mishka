@@ -14,11 +14,15 @@
   text-decoration: none;
   color: $text-color;
 }
-
+;
 .copyright__logo {
   margin-top: 12px;
   text-decoration: none;
-  fill: $brand-color--darken;
+  fill: $brand-color--light;
+
+  &:hover {
+    fill: $brand-color--darken;
+  }
 
   &:active {
     fill: rgba($brand-color--darken, 0.3);
